@@ -1,0 +1,145 @@
+.checkbox,
+.radio {
+  margin-left: -3px;
+}
+
+.checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 10px;
+  width: 67%;
+}
+
+.checkbox label::before,
+.checkbox label::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 0;
+  margin-left: -20px;
+  border-radius: 4px;
+  opacity: .50;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  top: 0;
+  background-color: $font-color;
+  transition: opacity 0.2s linear;
+}
+
+ .checkbox label::after{
+  top: -2px;
+  text-align: center;
+  font-size: 17px;
+  opacity: .9;
+  color: $white-color;
+  background-color: inherit;
+}
+
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+  width: 21px;
+  height: 21px;
+  top: -3px;
+}
+
+// .checkbox input[type="checkbox"]:focus + label::before {
+//   outline: thin dotted;
+//   outline: 5px auto -webkit-focus-ring-color;
+//   outline-offset: -2px;
+// }
+
+.checkbox input[type="checkbox"]:checked + label::after{
+  font-family: 'FontAwesome';
+  content: "\f00c";
+}
+
+.checkbox input[type="checkbox"]:checked + label::before{
+    opacity: 1;
+}
+
+
+.checkbox input[type="checkbox"]:disabled + label {
+    color: #ddd;
+}
+
+.checkbox input[type="checkbox"]:disabled + label::before {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.checkbox.checkbox-circle label::before {
+  border-radius: 50%;
+}
+
+.checkbox.checkbox-inline {
+  margin-top: 0;
+}
+
+.radio label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 10px;
+  width: 64%;
+}
+
+.radio label::before,
+.radio label::after {
+  font-family: 'FontAwesome';
+  content: "\f10c";
+  font-size: 25px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -8px;
+  color: $font-color;
+  opacity: .50;
+  margin-left: -20px;
+  padding: 1px;
+}
+
+.radio label::after {
+  content: "\f192";
+  opacity: 0;
+  font-size: 25px;
+  background-color: transparent;
+  transition: opacity 0.2s linear;
+}
+
+.radio input[type="radio"]:not(:disabled):hover + label::before{
+    font-family: 'FontAwesome';
+    content: "\f192";
+    color: $font-color;
+    opacity: .50;
+}
+
+// .radio input[type="radio"]:focus + label::before {
+//   outline: thin dotted;
+//   outline: 5px auto -webkit-focus-ring-color;
+//   outline-offset: -2px;
+// }
+
+.radio input[type="radio"]:checked + label::after {
+  opacity: 1;
+}
+
+.radio input[type="radio"]:disabled + label {
+  color: #ddd;
+}
+
+.radio input[type="radio"]:disabled + label::before,
+.radio input[type="radio"]:disabled + label::after {
+  color: #ddd;
+}
+
+.radio.radio-inline {
+  margin-top: 0;
+}
