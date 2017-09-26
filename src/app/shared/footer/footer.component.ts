@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(public location: Location) { }
 
   ngOnInit() {
-  }
 
+
+    }
+
+    isDocumentation(){
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if( titlee === '/documentation' ){
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

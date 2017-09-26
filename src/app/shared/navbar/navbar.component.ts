@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+    constructor(public location: Location) {}
 
   ngOnInit() {
   }
 
+  isHome(){
+      var titlee = this.location.prepareExternalUrl(this.location.path());
+    //   console.log(title)
+      if( titlee === '/home' ){
+        return true;
+      }
+      else {
+        return false;
+      }
+  }
+  isDocumentation(){
+      var titlee = this.location.prepareExternalUrl(this.location.path());
+      if( titlee === '/documentation' ){
+        return true;
+      }
+      else {
+        return false;
+      }
+  }
 }
