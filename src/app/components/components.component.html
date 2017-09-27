@@ -34,24 +34,25 @@
                 </div>
 
                 <div class="nav-tabs-navigation">
-
-                    <ngb-tabset>
-                      <ngb-tab title="Home">
-                        <ng-template ngbTabContent>
-                          <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p>
-                        </ng-template>
-                      </ngb-tab>
-                      <ngb-tab title="Profile">
-                        <ng-template ngbTabContent>
-                          <p>Here is your profile.</p>
-                        </ng-template>
-                      </ngb-tab>
-                      <ngb-tab title="Messages">
-                        <ng-template ngbTabContent>
-                          <p>Here are your messages.</p>
-                        </ng-template>
-                      </ngb-tab>
-                    </ngb-tabset>
+                    <div class="nav-tabs-wrapper">
+                        <ngb-tabset [justify]="'center'">
+                          <ngb-tab title="Home">
+                            <ng-template ngbTabContent>
+                              <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p>
+                            </ng-template>
+                          </ngb-tab>
+                          <ngb-tab title="Profile">
+                            <ng-template ngbTabContent>
+                              <p>Here is your profile.</p>
+                            </ng-template>
+                          </ngb-tab>
+                          <ngb-tab title="Messages">
+                            <ng-template ngbTabContent>
+                              <p>Here are your messages.</p>
+                            </ng-template>
+                          </ngb-tab>
+                        </ngb-tabset>
+                    </div>
                 </div>
 
             </div>
