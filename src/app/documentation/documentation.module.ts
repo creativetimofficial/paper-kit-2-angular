@@ -3,11 +3,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NouisliderModule } from 'ng2-nouislider';
+
 import { RouterModule } from '@angular/router';
 import { DocumentationComponent } from './documentation.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { DocumentationRoutes } from './documentation.routing';
-import { ModalComponent } from './modal/modal.component';
+import { NgbdModalComponent } from './modal/modal.component';
+import { NgbdModalContent } from './modal/modal.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NotificationComponent } from './notification/notification.component';
 import { ButtonsComponent } from './buttons/buttons.component';
@@ -27,12 +30,15 @@ import { PopoverComponent } from './popover/popover.component';
 @NgModule({
     imports: [
         CommonModule,
-        RouterModule.forChild(DocumentationRoutes)
+        RouterModule.forChild(DocumentationRoutes),
+        NgbModule,
+        NouisliderModule
     ],
     declarations: [
         DocumentationComponent,
         TutorialComponent,
-        ModalComponent,
+        NgbdModalComponent,
+        NgbdModalContent,
         NavigationComponent,
         NotificationComponent,
         ButtonsComponent,
@@ -49,6 +55,7 @@ import { PopoverComponent } from './popover/popover.component';
         TooltipsComponent,
         PopoverComponent
     ],
+     entryComponents: [NgbdModalContent],
     exports: [ DocumentationComponent ]
 })
 export class DocumentationModule { }

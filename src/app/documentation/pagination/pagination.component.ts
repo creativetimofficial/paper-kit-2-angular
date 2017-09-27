@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pagination.component.scss']
 })
 export class PaginationComponent implements OnInit {
-
+    page = 4;
+    page1 = 5;
   constructor() { }
 
   ngOnInit() {

@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 
 import { TutorialComponent } from './tutorial/tutorial.component';
-import { ModalComponent } from './modal/modal.component';
+import { NgbdModalComponent } from './modal/modal.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NotificationComponent } from './notification/notification.component';
 import { ButtonsComponent } from './buttons/buttons.component';
@@ -25,7 +25,7 @@ export const DocumentationRoutes: Routes = [{
         component: TutorialComponent
     },{
         path: 'modal',
-        component: ModalComponent
+        component: NgbdModalComponent
     },{
         path: 'navigation',
         component: NavigationComponent

@@ -1,3 +1,17 @@
-<p>
-  sliders works!
-</p>
+<h2> Sliders</h2>
+               <legend></legend>
+               <p class="space-top">We restyled jQuery UI slider, while keeping the design consistent.</p>
+
+               <nouislider [connect]="false" [min]="0" [max]="100" [step]="1" [(ngModel)]="simpleSlider" [tooltips]="false" class="slider"></nouislider>
+               <br>
+               <nouislider class="slider slider-info" [connect]="true" [min]="0" [max]="100" [step]="1" [(ngModel)]="doubleSlider" [tooltips]="false"></nouislider>
+               <div class="area-line">
+
+       <div id="sliderMarkup">
+       <pre class="prettyprint">
+   &lt;!-- Markup --&gt;
+   <nouislider [connect]="false" [min]="0" [max]="100" [step]="1" [(ngModel)]="simpleSlider" [tooltips]="false" class="slider"></nouislider>
+   <br>
+   <nouislider class="slider slider-info" [connect]="true" [min]="0" [max]="100" [step]="1" [(ngModel)]="doubleSlider" [tooltips]="false"></nouislider></pre>
+       </div>
+               </div>
