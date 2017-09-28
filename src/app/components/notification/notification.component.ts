@@ -26,10 +26,12 @@ export class NotificationComponent {
           id: 3,
           type: 'warning',
           message: 'This is a warning alert',
+          icon: 'nc-bell-55'
         }, {
           id: 4,
           type: 'danger',
           message: 'This is a danger alert',
+          icon: 'nc-bell-55'
         });
         this.backup = this.alerts.map((alert: IAlert) => Object.assign({}, alert));
       }
@@ -38,10 +40,6 @@ export class NotificationComponent {
         const index: number = this.alerts.indexOf(alert);
         this.alerts.splice(index, 1);
       }
-
-      public reset() {
-        this.alerts = this.backup.map((alert: IAlert) => Object.assign({}, alert));
-      }
 }
 
 
@@ -49,4 +47,5 @@ export interface IAlert {
   id: number;
   type: string;
   message: string;
+  icon?: string;
 }

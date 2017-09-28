@@ -4,7 +4,7 @@
 .nav-tabs-navigation{
     text-align: center;
     border-bottom: 1px solid $medium-pale-bg;
-    margin-bottom: 30px;
+
 
     .nav > .nav-item > .nav-link{
         padding-bottom: 20px;
@@ -19,9 +19,10 @@
     width: auto;
 }
 .nav-tabs {
-        border-bottom: 0 none;
         font-size: $font-size-medium;
         font-weight: $font-weight-bold;
+        border-bottom: 1px solid #F1EAE0;
+        margin-bottom: 30px;
         .nav-item{
             .nav-link{
                 border: 0 none;
@@ -55,7 +56,7 @@
                     display: inline-block;
                     position: absolute;
                     right: 40%;
-                    bottom: 5px;
+                    bottom: 0px;
                 }
 
                 &:before{
@@ -66,7 +67,7 @@
                     display: inline-block;
                     position: absolute;
                     right: 40%;
-                    bottom: 6px;
+                    bottom: 1px;
                 }
             }
 
