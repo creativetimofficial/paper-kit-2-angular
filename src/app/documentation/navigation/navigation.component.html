@@ -336,24 +336,23 @@
 	                We changed the design for the Bootstrap nav pills into something a bit more fresh. We also added more color classes for customisation.
 	            </p>
 				<!-- Nav pills -->
-				<ul class="nav nav-pills nav-pills-danger">
-					<li class="nav-item">
-						<a class="nav-link active" data-toggle="tab" href="#0">Info</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-toggle="tab" href="#0">Menu</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-toggle="tab" href="#0">Concept</a>
-					</li>
-				</ul>
-				<!-- Pill panes -->
-				<div class="tab-content">
-					<div class="tab-pane active" id="home" role="tabpanel"></div>
-					<div class="tab-pane" id="profile" role="tabpanel"></div>
-					<div class="tab-pane" id="messages" role="tabpanel"></div>
-					<div class="tab-pane" id="settings" role="tabpanel"></div>
-				</div>
+				<ngb-tabset type="pills" class="nav-pills-danger">
+				  <ngb-tab title="Info">
+				    <ng-template ngbTabContent>
+
+				    </ng-template>
+				  </ngb-tab>
+				  <ngb-tab title="Menu">
+					<ng-template ngbTabContent>
+
+					</ng-template>
+				  </ngb-tab>
+				  <ngb-tab title="Concept">
+				    <ng-template ngbTabContent>
+				    </ng-template>
+				  </ngb-tab>
+				</ngb-tabset>
+				
 	            <div class="area-line">
 	    			<div id="navPills" >
 	    				<pre class="prettyprint">
