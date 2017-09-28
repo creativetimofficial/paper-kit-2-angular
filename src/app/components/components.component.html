@@ -20,10 +20,8 @@
                     <br/>
                 </div>
                 <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
-
                 <br/>
-                <ngb-pagination [collectionSize]="70" [(page)]="page1" [boundaryLinks]="true"></ngb-pagination>
-
+                <ngb-pagination [collectionSize]="100" [(page)]="page1" [maxSize]="5" [rotate]="true"></ngb-pagination>
             </div>
         </div>
         <br/>
@@ -125,12 +123,15 @@
                     <div class='col-sm-6'>
                         <form class="form-inline">
                           <div class="form-group">
-                            <div class="input-group">
+                            <div class="input-group date">
                               <input class="form-control" placeholder="yyyy-mm-dd"
-                                     name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
-                              <button class="input-group-addon" (click)="d.toggle()" type="button">
-                                <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
-                              </button>
+                                     name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()">
+                              <!-- <button class="input-group-addon" type="button">
+                                <span class="glyphicon glyphicon-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                              </button> -->
+                              <span class="input-group-addon">
+			                        <span class="glyphicon glyphicon-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+			                    </span>
                             </div>
                           </div>
                         </form>
