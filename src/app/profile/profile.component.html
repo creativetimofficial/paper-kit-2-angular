@@ -23,66 +23,62 @@
             <br/>
             <div class="nav-tabs-navigation">
                 <div class="nav-tabs-wrapper">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#follows" role="tab">Follows</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#following" role="tab">Following</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Tab panes -->
-            <div class="tab-content following">
-                <div class="tab-pane active" id="follows" role="tabpanel">
-                    <div class="row">
-                        <div class="col-md-6 offset-md-3">
-                            <ul class="list-unstyled follows">
-                                <li>
-                                    <div class="row">
-                                        <div class="col-md-2 offset-md-0">
-                                            <img src="../assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                        </div>
-                                        <div class="col-md-7 col-xs-4">
-                                            <h6>Flume<br/><small>Musical Producer</small></h6>
-                                        </div>
-                                        <div class="col-md-3 col-xs-2">
-                                            <div class="unfollow" >
-                                                <div class="checkbox">
-                                                   <input id="checkbox1" type="checkbox" checked="">
-                                                   <label for="checkbox1"></label>
-                                                 </div>
+                    <ngb-tabset [justify]="'center'">
+                      <ngb-tab title="Follows">
+                        <ng-template ngbTabContent>
+                            <div class="row">
+                                <div class="col-md-6 offset-md-3">
+                                    <ul class="list-unstyled follows">
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-2 offset-md-0">
+                                                    <img src="../assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                </div>
+                                                <div class="col-md-7 col-xs-4">
+                                                    <h6>Flume<br/><small>Musical Producer</small></h6>
+                                                </div>
+                                                <div class="col-md-3 col-xs-2">
+                                                    <div class="unfollow" >
+                                                        <div class="checkbox">
+                                                           <input id="checkbox1" type="checkbox" checked="">
+                                                           <label for="checkbox1"></label>
+                                                         </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <hr />
-                                <li>
-                                    <div class="row">
-                                        <div class="col-md-2 offset-md-0">
-                                            <img src="../assets/img/faces/ayo-ogunseinde-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                        </div>
-                                        <div class="col-md-7 col-xs-4">
-                                            <h6>Banks<br /><small>Singer</small></h6>
-                                        </div>
-                                        <div class="col-md-3 col-xs-2">
-                                            <div class="unfollow" >
-                                                <div class="checkbox">
-                                                   <input id="checkbox2" type="checkbox" checked="">
-                                                   <label for="checkbox2"></label>
-                                                 </div>
+                                        </li>
+                                        <hr />
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-2 offset-md-0">
+                                                    <img src="../assets/img/faces/ayo-ogunseinde-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                </div>
+                                                <div class="col-md-7 col-xs-4">
+                                                    <h6>Banks<br /><small>Singer</small></h6>
+                                                </div>
+                                                <div class="col-md-3 col-xs-2">
+                                                    <div class="unfollow" >
+                                                        <div class="checkbox">
+                                                           <input id="checkbox2" type="checkbox" checked="">
+                                                           <label for="checkbox2"></label>
+                                                         </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane text-center" id="following" role="tabpanel">
-                    <h3 class="text-muted">Not following anyone yet :(</h3>
-                    <button class="btn btn-warning btn-round">Find artists</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ng-template>
+                      </ngb-tab>
+                      <ngb-tab title="Following">
+                        <ng-template ngbTabContent>
+                            <h3 class="text-muted">Not following anyone yet :(</h3>
+                            <br>
+                            <button class="btn btn-warning btn-round">Find artists</button>
+                        </ng-template>
+                      </ngb-tab>
+                    </ngb-tabset>
                 </div>
             </div>
         </div>

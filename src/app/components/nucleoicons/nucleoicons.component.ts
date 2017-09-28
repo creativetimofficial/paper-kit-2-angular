@@ -16,7 +16,7 @@ export class NucleoiconsComponent implements OnInit, OnDestroy {
       let navbar = document.getElementsByTagName('app-navbar')[0].children[0];
     //   navbar.length = 0;
     //   navbar.remove;
-      console.log(navbar);
+    //   console.log(navbar);
 
     //   navbar.hiddezn();
         navbar.classList.add('navbar-hidden');

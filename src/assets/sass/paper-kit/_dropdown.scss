@@ -1,6 +1,6 @@
 .dropdown{
     .dropdown-menu{
-        background-color: $pale-bg;
+        background-color: $white-color;
         border: 0 none;
         border-radius: $border-radius-extreme;
         display: block;
@@ -31,10 +31,6 @@
         }
 
         .dropdown-item{
-           padding: 0 !important;
-
-        }
-        .dropdown-item a{
             color: $font-color;
             font-size: $font-size-base;
             padding: 10px 45px 10px 15px;
@@ -42,6 +38,9 @@
             white-space: nowrap;
             width: 100%;
             display: block;
+            &:hover{
+                color: $white-color;
+            }
 
            img{
                margin-top: -3px;
@@ -115,7 +114,11 @@
         visibility: visible;
     }
 }
-
+.navbar-nav.mr-auto .dropdown-menu:before,
+.navbar-nav.mr-auto .dropdown-menu:after{
+    left: 12px !important;
+    right: auto;
+}
 //fix bug for the select items in btn-group
 .btn-group.select{
     // overflow: hidden;
@@ -150,7 +153,7 @@
     .navbar-nav .dropdown-item.show .dropdown-menu,
     .dropdown.show .dropdown-menu,
     .dropdown-btn.show .dropdown-menu{
-        transform: translate3d(0px, 0px, 0px);
+        transform: translate3d(0px, 15px, 0px);
         visibility: visible !important;
     }
     .bootstrap-select .dropdown-menu{
@@ -216,7 +219,7 @@
     .card.card-just-text .dropdown .dropdown-menu:after,
     .card-just-text .dropdown .dropdown-menu:after,
     .dropdown-btn .dropdown-menu:after{
-        border-bottom: 11px solid $pale-bg;
+        border-bottom: 11px solid $white-color;
         border-left: 11px solid rgba(0, 0, 0, 0);
         border-right: 11px solid rgba(0, 0, 0, 0);
         content: "";
