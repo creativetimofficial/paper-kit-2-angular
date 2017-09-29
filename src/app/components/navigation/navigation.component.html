@@ -30,20 +30,6 @@
                                   </div>
                                 </div>
                             </li>
-
-                            <!-- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                <ul class="dropdown-menu dropdown-menu-right dropdown-info">
-                                    <li class="dropdown-header">Dropdown header</li>
-                                    <li class="dropdown-item"><a href="#pk">Action</a></li>
-                                    <li class="dropdown-item"><a href="#pk">Another action</a></li>
-                                    <li class="dropdown-item"><a href="#pk">Something else here</a></li>
-                                    <div class="dropdown-divider"></div>
-                                    <li class="dropdown-item"><a href="#pk">Separated link</a></li>
-                                    <div class="dropdown-divider"></div>
-                                    <li class="dropdown-item"><a href="#pk">Another separated link</a></li>
-                                </ul>
-                            </li> -->
                         </ul>
                     </div>
                 </nav>
@@ -64,15 +50,17 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#pk"><i class="nc-icon nc-single-02" aria-hidden="true"></i></a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="nc-icon nc-settings-gear-65" aria-hidden="true"></i></a>
-                                <ul class="dropdown-menu dropdown-menu-right dropdown-danger">
-                                    <li class="dropdown-header" href="#pk">Dropdown header</li>
-                                    <li class="dropdown-item"><a href="#pk">Another action</a></li>
-                                    <li class="dropdown-item"><a href="#pk">Something else here</a></li>
+                            <li class="nav-item ">
+                                <div ngbDropdown class="d-inline-block dropdown">
+                                  <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle><i class="nc-icon nc-settings-gear-65" aria-hidden="true"></i></a>
+                                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-danger">
+                                    <a class="dropdown-item">Action - 1</a>
+                                    <a class="dropdown-item">Another Action</a>
+                                    <a class="dropdown-item">Something else is here</a>
                                     <div class="dropdown-divider"></div>
-                                    <li class="dropdown-item"><a href="#pk">Separated link</a></li>
-                                </ul>
+                                    <a class="dropdown-item">Separated link</a>
+                                  </div>
+                                </div>
                             </li>
                         </ul>
                     </div>

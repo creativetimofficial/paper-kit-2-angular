@@ -115,7 +115,9 @@
     }
 }
 .navbar-nav.mr-auto .dropdown-menu:before,
-.navbar-nav.mr-auto .dropdown-menu:after{
+.navbar-nav.mr-auto .dropdown-menu:after,
+.navbar-nav.ml-auto .dropdown-menu:before,
+.navbar-nav.ml-auto .dropdown-menu:after{
     left: 12px !important;
     right: auto;
 }
