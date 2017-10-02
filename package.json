@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-      "postinstall": "ng build --aot -prod",
-      "ng": "ng",
-      "start": "node server.js",
-      "build": "ng build",
-      "test": "ng test",
-      "lint": "ng lint",
-      "e2e": "ng e2e"
+    "postinstall": "ng build --aot -prod",
+    "ng": "ng",
+    "start": "node server.js",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "engines": {
     "node": "6.11.1",
@@ -17,7 +17,7 @@
   },
   "private": true,
   "dependencies": {
-      "@angular/cli": "1.4.2",
+    "@angular/cli": "1.4.2",
     "@angular/animations": "^4.0.0",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
