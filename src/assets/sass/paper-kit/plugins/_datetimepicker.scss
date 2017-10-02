@@ -4,18 +4,18 @@
  * https://github.com/Eonasdan/bootstrap-datetimepicker/
  */
 .sr-only,
-.d-inline-blocks .btn[data-action="incrementHours"]::after,
-.d-inline-blocks .btn[data-action="incrementMinutes"]::after,
-.d-inline-blocks .btn[data-action="decrementHours"]::after,
-.d-inline-blocks .btn[data-action="decrementMinutes"]::after,
-.d-inline-blocks .btn[data-action="showHours"]::after,
-.d-inline-blocks .btn[data-action="showMinutes"]::after,
-.d-inline-blocks .btn[data-action="togglePeriod"]::after,
-.d-inline-blocks .btn[data-action="clear"]::after,
-.d-inline-blocks .btn[data-action="today"]::after,
-.d-inline-blocks .picker-switch::after,
-.d-inline-blocks table th.prev::after,
-.d-inline-blocks table th.next::after {
+.d-inline-block .btn[data-action="incrementHours"]::after,
+.d-inline-block .btn[data-action="incrementMinutes"]::after,
+.d-inline-block .btn[data-action="decrementHours"]::after,
+.d-inline-block .btn[data-action="decrementMinutes"]::after,
+.d-inline-block .btn[data-action="showHours"]::after,
+.d-inline-block .btn[data-action="showMinutes"]::after,
+.d-inline-block .btn[data-action="togglePeriod"]::after,
+.d-inline-block .btn[data-action="clear"]::after,
+.d-inline-block .btn[data-action="today"]::after,
+.d-inline-block .picker-switch::after,
+.d-inline-block table th.prev::after,
+.d-inline-block table th.next::after {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -26,32 +26,32 @@
   border: 0;
 }
 
-.d-inline-blocks {
+.d-inline-block {
   list-style: none;
 }
-.d-inline-blocks a .btn:hover {
+.d-inline-block a .btn:hover {
   background-color: transparent;
 }
-.d-inline-blocks.dropdown-menu {
+.d-inline-block.dropdown-menu {
   padding: 4px;
   width: 16em;
 }
 @media (min-width: 768px) {
-  .d-inline-blocks.dropdown-menu.timepicker-sbs {
+  .d-inline-block.dropdown-menu.timepicker-sbs {
     width: 38em;
   }
 }
 @media (min-width: 992px) {
-  .d-inline-blocks.dropdown-menu.timepicker-sbs {
+  .d-inline-block.dropdown-menu.timepicker-sbs {
     width: 38em;
   }
 }
 @media (min-width: 1200px) {
-  .d-inline-blocks.dropdown-menu.timepicker-sbs {
+  .d-inline-block.dropdown-menu.timepicker-sbs {
     width: 38em;
   }
 }
-.d-inline-blocks.dropdown-menu.bottom:before{
+.d-inline-block.dropdown-menu.bottom:before{
     border-bottom: 11px solid #F1EAE0;
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
@@ -62,7 +62,7 @@
     left: auto;
     top: -11px;
 }
-.d-inline-blocks.dropdown-menu.bottom:after{
+.d-inline-block.dropdown-menu.bottom:after{
     border-bottom: 11px solid #FFFFFF;
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
@@ -73,46 +73,46 @@
     left: auto;
     top: -11px;
 }
-.d-inline-blocks.dropdown-menu.top {
+.d-inline-block.dropdown-menu.top {
   margin-top: auto;
   margin-bottom: -20px;
 }
-.d-inline-blocks.dropdown-menu.top.open {
+.d-inline-block.dropdown-menu.top.open {
   margin-top: auto;
   margin-bottom: 5px;
   background-color: $white-color;
 }
-.d-inline-blocks.dropdown-menu.pull-right:before {
+.d-inline-block.dropdown-menu.pull-right:before {
   left: auto;
   right: 6px;
 }
-.d-inline-blocks.dropdown-menu.pull-right:after {
+.d-inline-block.dropdown-menu.pull-right:after {
   left: auto;
   right: 7px;
 }
-.d-inline-blocks .list-unstyled {
+.d-inline-block .list-unstyled {
   margin: 0;
 }
-.d-inline-blocks a[data-action] {
+.d-inline-block a[data-action] {
   padding: 6px 0;
   border-width: 0;
   color: #66615B;
   background-color: transparent;
 }
-.d-inline-blocks a[data-action="togglePicker"],
-.d-inline-blocks a[data-action="togglePicker"]:hover {
+.d-inline-block a[data-action="togglePicker"],
+.d-inline-block a[data-action="togglePicker"]:hover {
     color: #429cb6 !important;
 }
-.d-inline-blocks a[data-action]:hover {
+.d-inline-block a[data-action]:hover {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.85);
 }
-.d-inline-blocks a[data-action]:active {
+.d-inline-block a[data-action]:active {
   box-shadow: none;
 }
-.d-inline-blocks .timepicker-hour,
-.d-inline-blocks .timepicker-minute,
-.d-inline-blocks .timepicker-second {
+.d-inline-block .timepicker-hour,
+.d-inline-block .timepicker-minute,
+.d-inline-block .timepicker-second {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -121,80 +121,80 @@
   margin: 3px;
   border-radius: 50%;
 }
-.d-inline-blocks button[data-action] {
+.d-inline-block button[data-action] {
   width: 38px;
   height: 38px;
   padding: 0;
 }
-.d-inline-blocks .btn[data-action="incrementHours"]::after {
+.d-inline-block .btn[data-action="incrementHours"]::after {
   content: "Increment Hours";
 }
-.d-inline-blocks .btn[data-action="incrementMinutes"]::after {
+.d-inline-block .btn[data-action="incrementMinutes"]::after {
   content: "Increment Minutes";
 }
-.d-inline-blocks .btn[data-action="decrementHours"]::after {
+.d-inline-block .btn[data-action="decrementHours"]::after {
   content: "Decrement Hours";
 }
-.d-inline-blocks .btn[data-action="decrementMinutes"]::after {
+.d-inline-block .btn[data-action="decrementMinutes"]::after {
   content: "Decrement Minutes";
 }
-.d-inline-blocks .btn[data-action="showHours"]::after {
+.d-inline-block .btn[data-action="showHours"]::after {
   content: "Show Hours";
 }
-.d-inline-blocks .btn[data-action="showMinutes"]::after {
+.d-inline-block .btn[data-action="showMinutes"]::after {
   content: "Show Minutes";
 }
-.d-inline-blocks .btn[data-action="togglePeriod"]::after {
+.d-inline-block .btn[data-action="togglePeriod"]::after {
   content: "Toggle AM/PM";
 }
-.d-inline-blocks .btn[data-action="clear"]::after {
+.d-inline-block .btn[data-action="clear"]::after {
   content: "Clear the picker";
 }
-.d-inline-blocks .btn[data-action="today"]::after {
+.d-inline-block .btn[data-action="today"]::after {
   content: "Set the date to today";
 }
-.d-inline-blocks .picker-switch {
+.d-inline-block .picker-switch {
   text-align: center;
   border-radius: 4px;
 }
-.d-inline-blocks .picker-switch::after {
+.d-inline-block .picker-switch::after {
   content: "Toggle Date and Time Screens";
 }
-.d-inline-blocks .picker-switch td {
+.d-inline-block .picker-switch td {
   padding: 0;
   margin: 0;
   height: auto;
   width: auto;
   line-height: inherit;
 }
-.d-inline-blocks .picker-switch td span {
+.d-inline-block .picker-switch td span {
   line-height: 2.5;
   height: 2.5em;
   width: 100%;
   border-radius: 4px;
   margin: 2px 0px !important;
 }
-.d-inline-blocks table {
+.d-inline-block table {
   width: 100%;
   margin: 0;
 }
-.d-inline-blocks table td > div, .d-inline-blocks table th > div {
+.d-inline-block table td > div, .d-inline-block table th > div {
   text-align: center;
 }
-.d-inline-blocks table th {
+.d-inline-block table th {
   height: 20px;
   line-height: 20px;
   width: 20px;
 }
-.d-inline-blocks table th.picker-switch {
+.d-inline-block table th.picker-switch {
   width: 145px;
 }
-.d-inline-blocks table th.disabled, .d-inline-blocks table th.disabled:hover {
+.d-inline-block table th.disabled, .d-inline-block table th.disabled:hover {
   background: none;
   color: #cfcfca;
   cursor: not-allowed;
 }
-.d-inline-blocks table th.prev span, .d-inline-blocks table th.next span {
+.d-inline-block table th.prev span, .d-inline-block table th.next span {
   border-radius: 4px;
   height: 27px;
   width: 27px;
@@ -203,13 +203,13 @@
   border-radius: 50%;
   text-align: center;
 }
-.d-inline-blocks table th.prev::after {
+.d-inline-block table th.prev::after {
   content: "Previous Month";
 }
-.d-inline-blocks table th.next::after {
+.d-inline-block table th.next::after {
   content: "Next Month";
 }
-.d-inline-blocks table th.dow {
+.d-inline-block table th.dow {
   text-align: center;
   border-bottom: 1px solid #E3E3E3;
   font-size: 12px;
@@ -219,26 +219,26 @@
   padding-bottom: 5px;
   padding-top: 10px;
 }
-.d-inline-blocks table thead tr:first-child th {
+.d-inline-block table thead tr:first-child th {
   cursor: pointer;
 }
-.d-inline-blocks table thead tr:first-child th:hover span, .d-inline-blocks table thead tr:first-child th.picker-switch:hover {
+.d-inline-block table thead tr:first-child th:hover span, .d-inline-block table thead tr:first-child th.picker-switch:hover {
   background: #E3E3E3;
 }
-.d-inline-blocks table td > div {
+.d-inline-block table td > div {
   border-radius: 4px;
   height: 54px;
   line-height: 54px;
   width: 54px;
   text-align: center;
 }
-.d-inline-blocks table td.cw > div {
+.d-inline-block table td.cw > div {
   font-size: .8em;
   height: 20px;
   line-height: 20px;
   color: #cfcfca;
 }
-.d-inline-blocks table td.day > div {
+.d-inline-block table td.day > div {
   height: 30px;
   line-height: 31px;
   width: 30px;
@@ -249,17 +249,17 @@
   z-index: -1;
   position: relative;
 }
-.d-inline-blocks table td.minute > div, .d-inline-blocks table td.hour > div {
+.d-inline-block table td.minute > div, .d-inline-block table td.hour > div {
   border-radius: 50%;
 }
-.d-inline-blocks table td.day:hover > div, .d-inline-blocks table td.hour:hover > div, .d-inline-blocks table td.minute:hover > div, .d-inline-blocks table td.second:hover > div {
+.d-inline-block table td.day:hover > div, .d-inline-block table td.hour:hover > div, .d-inline-block table td.minute:hover > div, .d-inline-block table td.second:hover > div {
   background: #E3E3E3;
   cursor: pointer;
 }
-.d-inline-blocks table td.old > div, .d-inline-blocks table td.new > div {
+.d-inline-block table td.old > div, .d-inline-block table td.new > div {
   color: #cfcfca;
 }
-.d-inline-blocks table td.today > div:before {
+.d-inline-block table td.today > div:before {
   content: '';
   display: inline-block;
   border: 0 0 7px 7px solid transparent;
@@ -269,19 +269,19 @@
   bottom: 4px;
   right: 4px;
 }
-.d-inline-blocks table td.active > div, .d-inline-blocks table td.active:hover > div {
+.d-inline-block table td.active > div, .d-inline-block table td.active:hover > div {
   background-color: #68B3C8;
   color: #FFFFFF;
 }
-.d-inline-blocks table td.active.today:before > div {
+.d-inline-block table td.active.today:before > div {
   border-bottom-color: #FFFFFF;
 }
-.d-inline-blocks table td.disabled > div, .d-inline-blocks table td.disabled:hover > div {
+.d-inline-block table td.disabled > div, .d-inline-block table td.disabled:hover > div {
   background: none;
   color: #cfcfca;
   cursor: not-allowed;
 }
-.d-inline-blocks table td span {
+.d-inline-block table td span {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -291,27 +291,27 @@
   border-radius: 50%;
   text-align: center;
 }
-.d-inline-blocks table td span:hover {
+.d-inline-block table td span:hover {
   background: #E3E3E3;
 }
-.d-inline-blocks table td span.active {
+.d-inline-block table td span.active {
   background-color: #68B3C8;
   color: #FFFFFF;
 }
-.d-inline-blocks table td span.old {
+.d-inline-block table td span.old {
   color: #cfcfca;
 }
-.d-inline-blocks table td span.disabled, .d-inline-blocks table td span.disabled:hover {
+.d-inline-block table td span.disabled, .d-inline-block table td span.disabled:hover {
   background: none;
   color: #cfcfca;
   cursor: not-allowed;
 }
-.d-inline-blocks .timepicker-picker span,
-.d-inline-blocks .timepicker-hours span,
-.d-inline-blocks .timepicker-minutes span {
+.d-inline-block .timepicker-picker span,
+.d-inline-block .timepicker-hours span,
+.d-inline-block .timepicker-minutes span {
   border-radius: 50% !important;
 }
-.d-inline-blocks.usetwentyfour td.hour {
+.d-inline-block.usetwentyfour td.hour {
   height: 27px;
   line-height: 27px;
 }
@@ -331,8 +331,8 @@
   z-index: 1;
   cursor: pointer;
 }
-.d-inline-blocks{
-    opacity: 0;
+.d-inline-block{
+    // opacity: 0;
     -webkit-transform: translate3d(0px, -10px, 0px);
     -moz-transform: translate3d(0, -10px, 0);
     -o-transform: translate3d(0, -10px, 0);
@@ -359,7 +359,7 @@
         background-color: $white-color;
     }
 }
-.d-inline-blocks.open.top{
+.d-inline-block.open.top{
     -webkit-transform: translate3d(0, -10px, 0);
     -moz-transform: translate3d(0, -10px, 0);
     -o-transform: translate3d(0, -10px, 0);
