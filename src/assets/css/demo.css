@@ -1129,7 +1129,7 @@
     z-index: 2;
 }
 .profile-content{
-    padding-top: 0;
+    padding-top: 0!important;
     position: relative;
     z-index: 2;
 }
