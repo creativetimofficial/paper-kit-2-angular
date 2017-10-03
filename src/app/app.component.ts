@@ -19,7 +19,7 @@ export class AppComponent implements OnInit{
         var navbar : HTMLElement = this.element.nativeElement.children[0].children[0];
         // console.log(this.renderer);
         this._router = this.router.events.filter(event => event instanceof NavigationEnd).subscribe((event: NavigationEnd) => {
-          document.querySelector('body').scrollTop = 0;
+            window.document.children[0].scrollTop = 0;
         });
         this.renderer.listenGlobal('window', 'scroll', (event) => {
           const number = window.scrollY;
