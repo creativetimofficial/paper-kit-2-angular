@@ -15,15 +15,24 @@ import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    NgbModule,
-    NouisliderModule,
-    JWBootstrapSwitchModule
-  ],
-  declarations: [ComponentsComponent,BasicelementsComponent, NavigationComponent, TypographyComponent, NucleoiconsComponent, NotificationComponent, NgbdModalComponent, NgbdModalContent],
-   entryComponents: [NgbdModalContent],
-  exports:[ ComponentsComponent ]
+    imports: [
+        CommonModule,
+        FormsModule,
+        NgbModule,
+        NouisliderModule,
+        JWBootstrapSwitchModule
+    ],
+    declarations: [
+        ComponentsComponent,
+        BasicelementsComponent,
+        NavigationComponent,
+        TypographyComponent,
+        NucleoiconsComponent,
+        NotificationComponent,
+        NgbdModalComponent,
+        NgbdModalContent
+    ],
+    entryComponents: [NgbdModalContent],
+    exports:[ ComponentsComponent ]
 })
 export class ComponentsModule { }

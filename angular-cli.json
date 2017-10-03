@@ -20,7 +20,8 @@
       "prefix": "app",
       "styles": [
           "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "assets/sass/paper-kit.scss"
+          "assets/sass/paper-kit.scss",
+          "assets/css/nucleo-icons.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.slim.min.js",
