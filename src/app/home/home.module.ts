@@ -10,15 +10,15 @@ import { HomeComponent } from './home.component';
 import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
-  imports: [
-      CommonModule,
-      BrowserModule,
-      FormsModule,
-      RouterModule,
-      ComponentsModule
-  ],
-  declarations: [HomeComponent],
-  exports:[ HomeComponent ],
-  providers: []
+    imports: [
+        CommonModule,
+        BrowserModule,
+        FormsModule,
+        RouterModule,
+        ComponentsModule
+    ],
+    declarations: [ HomeComponent ],
+    exports:[ HomeComponent ],
+    providers: []
 })
 export class HomeModule { }

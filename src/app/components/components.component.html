@@ -34,21 +34,21 @@
                 <div class="nav-tabs-navigation">
                     <div class="nav-tabs-wrapper">
                         <ngb-tabset [justify]="'center'">
-                          <ngb-tab title="Home">
-                            <ng-template ngbTabContent>
-                              <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p>
-                            </ng-template>
-                          </ngb-tab>
-                          <ngb-tab title="Profile">
-                            <ng-template ngbTabContent>
-                              <p>Here is your profile.</p>
-                            </ng-template>
-                          </ngb-tab>
-                          <ngb-tab title="Messages">
-                            <ng-template ngbTabContent>
-                              <p>Here are your messages.</p>
-                            </ng-template>
-                          </ngb-tab>
+                            <ngb-tab title="Home">
+                                <ng-template ngbTabContent>
+                                    <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Profile">
+                                <ng-template ngbTabContent>
+                                    <p>Here is your profile.</p>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Messages">
+                                <ng-template ngbTabContent>
+                                    <p>Here are your messages.</p>
+                                </ng-template>
+                            </ngb-tab>
                         </ngb-tabset>
                     </div>
                 </div>
@@ -122,18 +122,15 @@
                 <div class="row">
                     <div class='col-sm-6'>
                         <form class="form-inline">
-                          <div class="form-group">
-                            <div class="input-group date">
-                              <input class="form-control" placeholder="yyyy-mm-dd"
-                                     name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()">
-                              <!-- <button class="input-group-addon" type="button">
-                                <span class="glyphicon glyphicon-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                              </button> -->
-                              <span class="input-group-addon">
-			                        <span class="glyphicon glyphicon-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-			                    </span>
+                            <div class="form-group">
+                                <div class="input-group date">
+                                    <input class="form-control" placeholder="yyyy-mm-dd"
+                                         name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                    </span>
+                                </div>
                             </div>
-                          </div>
                         </form>
                     </div>
                 </div>
@@ -167,35 +164,25 @@
             <div class="col-md-8 mr-auto ml-auto">
                 <div class="card page-carousel">
                     <ngb-carousel>
-                      <ng-template ngbSlide>
-                        <img src="../assets/img/soroush-karimi.jpg" alt="Random first slide">
-                        <div class="carousel-caption">
-                          <p>Somewhere</p>
-                        </div>
-                      </ng-template>
-                      <ng-template ngbSlide>
-                        <img src="../assets/img/federico-beccari.jpg" alt="Random second slide">
-                        <div class="carousel-caption">
-                         <p>Somewhere else</p>
-                        </div>
-                      </ng-template>
-                      <ng-template ngbSlide>
-                        <img src="../assets/img/joshua-stannard.jpg" alt="Random third slide">
-                        <div class="carousel-caption">
-                            <p>Here it is</p>
-                        </div>
-                      </ng-template>
+                        <ng-template ngbSlide>
+                            <img src="../assets/img/soroush-karimi.jpg" alt="Random first slide">
+                            <div class="carousel-caption">
+                                <p>Somewhere</p>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <img src="../assets/img/federico-beccari.jpg" alt="Random second slide">
+                            <div class="carousel-caption">
+                                <p>Somewhere else</p>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <img src="../assets/img/joshua-stannard.jpg" alt="Random third slide">
+                            <div class="carousel-caption">
+                                <p>Here it is</p>
+                            </div>
+                        </ng-template>
                     </ngb-carousel>
-                    <!--
-                        <a class="left carousel-control carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="fa fa-angle-left"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span class="fa fa-angle-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                 -->
                 </div>
             </div>
         </div>
