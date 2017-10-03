@@ -17,15 +17,14 @@ export class AppComponent implements OnInit{
     }
     ngOnInit(){
         var navbar : HTMLElement = this.element.nativeElement.children[0].children[0];
-        // console.log(navbar);
+        // console.log(this.renderer);
         this._router = this.router.events.filter(event => event instanceof NavigationEnd).subscribe((event: NavigationEnd) => {
           document.querySelector('body').scrollTop = 0;
         });
         this.renderer.listenGlobal('window', 'scroll', (event) => {
-          const number = this.document.body.scrollTop;
+          const number = window.scrollY;
           if (number > 150) {
             // add logic
-            // console.log('caca')
             navbar.classList.remove('navbar-transparent');
           } else {
             // remove logic
@@ -43,14 +42,4 @@ export class AppComponent implements OnInit{
         return true;
       }
     }
-    // removeNavbar(){
-    //   var titlee = this.location.prepareExternalUrl(this.location.path());
-    //   titlee = titlee.slice( 1 );
-    //   if(titlee === 'nucleoicons'){
-    //     return false;
-    //   }
-    //   else {
-    //     return true;
-    //   }
-    // }
 }

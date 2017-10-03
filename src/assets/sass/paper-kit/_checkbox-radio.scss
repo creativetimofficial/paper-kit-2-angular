@@ -157,6 +157,10 @@
             top: -5px;
             left: 5px;
         }
+
+        input[type="radio"]:checked + .form-check-sign::after{
+            opacity: 1;
+        }
         .form-check-sign::before{
             opacity: 0;
         }
