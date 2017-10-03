@@ -34,41 +34,110 @@ The Paper Kit is built on top of Bootstrap 4, so you can safely use it on your e
     Let's take it one by one:
 </p>
 <pre class="prettyprint">
-PAPER-KIT
-├── CHANGELOG.md
-├── LICENSE.md
+PAPER-KIT2
 ├── README.md
-├── assets
-│   ├── css
-│   │   ├── bootstrap-switch.css
-│   │   ├── bootstrap.min.css
-│   │   ├── demo.css
-│   │   ├── examples.css
-│   │   ├── paper-kit.css
-│   │   └── paper-kit.css.map
-│   ├── img
-│   ├── js
-│   │   ├── bootstrap-datetimepicker.min.js
-│   │   ├── bootstrap-select.js
-│   │   ├── bootstrap-switch.min.js
-│   │   ├── bootstrap.min.js
-│   │   ├── jquery-3.2.1.js
-│   │   ├── jquery-ui-1.12.1.custom.min.js
-│   │   ├── moment.min.js
-│   │   ├── nouislider.js
-│   │   ├── paper-kit.js
-│   │   └── tether.min.js
-│   └── sass
-├── documentation
-│   ├── style.css
-│   ├── tutorial-components.html
-│   └── tutorial.html
-├── examples
-│   ├── landing.html
-│   ├── profile.html
-│   └── register.html
-├── index.html
-└── template.html</pre>
+├── angular-cli.json
+├── e2e
+├── karma.conf.js
+├── package.json
+├── protractor.conf.js
+├── server.js
+├── src
+│   ├── app
+│   │   ├── app.component.html
+│   │   ├── app.component.scss
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   ├── app.routing.ts
+│   │   ├── components
+│   │   │   ├── basicelements
+│   │   │   │   ├── basicelements.component.html
+│   │   │   │   ├── basicelements.component.scss
+│   │   │   │   ├── basicelements.component.spec.ts
+│   │   │   │   └── basicelements.component.ts
+│   │   │   ├── components.component.html
+│   │   │   ├── components.component.ts
+│   │   │   ├── components.module.ts
+│   │   │   ├── modal
+│   │   │   │   ├── modal.component.html
+│   │   │   │   ├── modal.component.scss
+│   │   │   │   ├── modal.component.spec.ts
+│   │   │   │   └── modal.component.ts
+│   │   │   ├── navigation
+│   │   │   │   ├── navigation.component.html
+│   │   │   │   ├── navigation.component.scss
+│   │   │   │   ├── navigation.component.spec.ts
+│   │   │   │   └── navigation.component.ts
+│   │   │   ├── notification
+│   │   │   │   ├── notification.component.html
+│   │   │   │   ├── notification.component.scss
+│   │   │   │   ├── notification.component.spec.ts
+│   │   │   │   └── notification.component.ts
+│   │   │   ├── nucleoicons
+│   │   │   │   ├── nucleoicons.component.html
+│   │   │   │   ├── nucleoicons.component.scss
+│   │   │   │   ├── nucleoicons.component.spec.ts
+│   │   │   │   └── nucleoicons.component.ts
+│   │   │   └── typography
+│   │   │       ├── typography.component.html
+│   │   │       ├── typography.component.scss
+│   │   │       ├── typography.component.spec.ts
+│   │   │       └── typography.component.ts
+│   │   ├── home
+│   │   │   ├── home.component.html
+│   │   │   ├── home.component.scss
+│   │   │   ├── home.component.spec.ts
+│   │   │   ├── home.component.ts
+│   │   │   └── home.module.ts
+│   │   ├── landing
+│   │   │   ├── landing.component.html
+│   │   │   ├── landing.component.scss
+│   │   │   ├── landing.component.spec.ts
+│   │   │   └── landing.component.ts
+│   │   ├── profile
+│   │   │   ├── profile.component.html
+│   │   │   ├── profile.component.scss
+│   │   │   ├── profile.component.spec.ts
+│   │   │   └── profile.component.ts
+│   │   ├── shared
+│   │   │   ├── footer
+│   │   │   │   ├── footer.component.html
+│   │   │   │   ├── footer.component.scss
+│   │   │   │   ├── footer.component.spec.ts
+│   │   │   │   └── footer.component.ts
+│   │   │   └── navbar
+│   │   │       ├── navbar.component.html
+│   │   │       ├── navbar.component.scss
+│   │   │       ├── navbar.component.spec.ts
+│   │   │       └── navbar.component.ts
+│   │   └── signup
+│   │       ├── signup.component.html
+│   │       ├── signup.component.scss
+│   │       ├── signup.component.spec.ts
+│   │       └── signup.component.ts
+│   ├── assets
+│   │   ├── css
+│   │   ├── fonts
+│   │   ├── img
+│   │   ├── js
+│   │   └── sass
+│   │       ├── paper-kit
+│   │       └── paper-kit.scss
+│   ├── environments
+│   │   ├── environment.prod.ts
+│   │   └── environment.ts
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── styles.scss
+│   ├── test.ts
+│   ├── tsconfig.app.json
+│   ├── tsconfig.spec.json
+│   └── typings.d.ts
+├── tsconfig.json
+└── tslint.json</pre>
 <!--         end row -->
 
 <!--         restyled components row -->
@@ -106,7 +175,7 @@ Going through them, we added:
     <li> Checkboxes</li>
     <li> Radio Buttons</li>
     <li> Sliders</li>
-    <li> Datetimepicker</li>
+    <li> Datepicker</li>
 </ul>
 <p>
     For more details regarding the components, go to our <a [routerLink]="['/home']">components page</a>.
