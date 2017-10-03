@@ -1,0 +1,43 @@
+pre.prettyprint{
+    background-color: #eee;
+    border: 0px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: left;
+}
+.atv, .str{
+    color: #05AE0E;
+}
+.tag, .pln, .kwd{
+    color: #3472F7;
+}
+.atn{
+    color: #2C93FF;
+}
+.pln{
+    color: #333;
+}
+.com{
+    color: #999;
+}
+.space-top{
+    margin-top: 50px;
+}
+.area-line{
+    border: 1px solid #999;
+    border-left: 0;
+    border-right: 0;
+    color: #666;
+    display: block;
+    margin-top: 20px;
+    padding: 8px 0;
+    text-align: center;
+}
+.area-line a{
+    color: #666;
+}
+.container-fluid{
+    padding-right: 15px;
+    padding-left: 15px;
+}

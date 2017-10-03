@@ -1,4 +1,90 @@
-<h2> Notifications </h2>
-<legend></legend>
+<div class="tim-title">
+    <h2>Notifications</h2>
+</div>
+
 <p>
-The new Paper Kit notifications are looking fresh and clean. They go great with the navbar. If you want to see how we recommend using them, see on of the example pages <a href="../examples/landing.html">here.</a> </p>
+The new Paper Kit notifications are looking fresh and clean. They go great with the navbar.</p>
+<p class="space-top"><b>For full documentation, see this <a href="https://ng-bootstrap.github.io/#/components/alert/examples" target="_blank">link</a>.</b></p>
+<br>
+<p *ngFor="let alert of alerts">
+  <ngb-alert [type]="alert.type"  [dismissible]="false">
+      <div class="container">
+          <ng-container *ngIf="alert.icon">
+            <i class="nc-icon {{alert.icon}}"></i>
+          </ng-container>
+
+          {{ alert.message }}
+          <button type="button" name="button" class="close" (click)="closeAlert(alert)">
+              <i class="nc-icon nc-simple-remove"></i>
+          </button>
+      </div>
+  </ngb-alert>
+</p>
+
+<div class="area-line">
+    <div id="tooltipsCode">
+    <pre class="prettyprint">
+HTML:
+
+&#x3C;p *ngFor=&#x22;let alert of alerts&#x22;&#x3E;
+  &#x3C;ngb-alert [type]=&#x22;alert.type&#x22;  [dismissible]=&#x22;false&#x22;&#x3E;
+      &#x3C;div class=&#x22;container&#x22;&#x3E;
+          &#x3C;ng-container *ngIf=&#x22;alert.icon&#x22;&#x3E;
+            &#x3C;i class=&#x22;nc-icon {{ '{' }}{{ '{' }}alert.icon{{ '}' }}{{ '}' }}&#x22;&#x3E;&#x3C;/i&#x3E;
+          &#x3C;/ng-container&#x3E;
+
+          {{ '{' }}{{ '{' }} alert.message {{ '}' }}{{ '}' }}
+          &#x3C;button type=&#x22;button&#x22; name=&#x22;button&#x22; class=&#x22;close&#x22; (click)=&#x22;closeAlert(alert)&#x22;&#x3E;
+              &#x3C;i class=&#x22;nc-icon nc-simple-remove&#x22;&#x3E;&#x3C;/i&#x3E;
+          &#x3C;/button&#x3E;
+      &#x3C;/div&#x3E;
+  &#x3C;/ngb-alert&#x3E;
+&#x3C;/p&#x3E;
+
+TYPESCRIPT:
+
+export class NotificationComponent {{ '{' }}
+      @Input()
+      public alerts: Array&#x3C;IAlert&#x3E; = [];
+
+      private backup: Array&#x3C;IAlert&#x3E;;
+
+      constructor() {{ '{' }}
+        this.alerts.push({{ '{' }}
+          id: 1,
+          type: &#x27;success&#x27;,
+          message: &#x27;This is an success alert&#x27;,
+        {{ '}' }}, {{ '{' }}
+          id: 2,
+          type: &#x27;info&#x27;,
+          message: &#x27;This is an info alert&#x27;,
+        {{ '}' }}, {{ '{' }}
+          id: 3,
+          type: &#x27;warning&#x27;,
+          message: &#x27;This is a warning alert&#x27;,
+          icon: &#x27;nc-bell-55&#x27;
+        {{ '}' }}, {{ '{' }}
+          id: 4,
+          type: &#x27;danger&#x27;,
+          message: &#x27;This is a danger alert&#x27;,
+          icon: &#x27;nc-bell-55&#x27;
+        {{ '}' }});
+        this.backup = this.alerts.map((alert: IAlert) =&#x3E; Object.assign({{ '{' }}{{ '}' }}, alert));
+      {{ '}' }}
+
+      public closeAlert(alert: IAlert) {{ '{' }}
+        const index: number = this.alerts.indexOf(alert);
+        this.alerts.splice(index, 1);
+      {{ '}' }}
+{{ '}' }}
+
+
+export interface IAlert {{ '{' }}
+  id: number;
+  type: string;
+  message: string;
+  icon?: string;
+{{ '}' }}
+</pre>
+    </div>
+</div>

@@ -3,61 +3,63 @@
     <p class="space-top">
         To use the custom radio buttons, you need to import a separate Javascript file called 'paper-kit-radio.js'.
     </p>
-		<div class="radio">
-			   <input type="radio" name="radio1" id="radio1" value="option1">
-			   <label for="radio1">
-				   Radio is off
-			   </label>
-		   </div>
-
-		   <div class="radio">
-			   <input type="radio" name="radio1" id="radio2" value="option2" checked="">
-			   <label for="radio2">
-				   Radio is on
-			   </label>
-		   </div>
-
-		   <div class="radio">
-			   <input type="radio" name="radio3" id="radio3" value="option3" disabled="">
-			   <label for="radio3">
-				   Disabled radio is off
-			   </label>
-		   </div>
-
-		   <div class="radio">
-			   <input type="radio" name="radio4" id="radio4" value="option4" checked="" disabled="">
-			   <label for="radio4">
-				   Disabled radio is on
-			   </label>
-		   </div>
+    <div class="form-check-radio">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+        Radio is off
+        <span class="form-check-sign"></span>
+      </label>
+    </div>
+    <div class="form-check-radio">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked="">
+        Radio is on
+        <span class="form-check-sign"></span>
+      </label>
+    </div>
+    <div class="form-check-radio disabled">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios3" value="option3" disabled="">
+        Disabled Radio is off
+        <span class="form-check-sign"></span>
+      </label>
+    </div>
+    <div class="form-check-radio disabled">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios4" value="option3" checked disabled="">
+        Disabled Radio is on
+        <span class="form-check-sign"></span>
+      </label>
+    </div>
     <!-- <p>Usage can be done via Data Attributes: <a data-target="#radioDataAttribute" href="javascript: void(0);" data-toggle="collapse">See example.</a></p> -->
 	<div id="radioDataAttribute">
 		<pre class="prettyprint">
-&lt;div class=&quot;radio&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; id=&quot;radio1&quot; value=&quot;option1&quot;&gt;
-    &lt;label for=&quot;radio1&quot;&gt;
+&#x3C;div class=&#x22;form-check-radio&#x22;&#x3E;
+  &#x3C;label class=&#x22;form-check-label&#x22;&#x3E;
+    &#x3C;input class=&#x22;form-check-input&#x22; type=&#x22;radio&#x22; name=&#x22;exampleRadios&#x22; id=&#x22;exampleRadios1&#x22; value=&#x22;option1&#x22; &#x3E;
     Radio is off
-    &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;radio&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; id=&quot;radio2&quot; value=&quot;option2&quot; checked=&quot;&quot;&gt;
-    &lt;label for=&quot;radio2&quot;&gt;
+    &#x3C;span class=&#x22;form-check-sign&#x22;&#x3E;&#x3C;/span&#x3E;
+  &#x3C;/label&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;form-check-radio&#x22;&#x3E;
+  &#x3C;label class=&#x22;form-check-label&#x22;&#x3E;
+    &#x3C;input class=&#x22;form-check-input&#x22; type=&#x22;radio&#x22; name=&#x22;exampleRadios&#x22; id=&#x22;exampleRadios2&#x22; value=&#x22;option2&#x22; checked=&#x22;&#x22;&#x3E;
     Radio is on
-    &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;radio&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;radio3&quot; id=&quot;radio3&quot; value=&quot;option3&quot; disabled=&quot;&quot;&gt;
-    &lt;label for=&quot;radio3&quot;&gt;
-    Disabled radio is off
-    &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;radio&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;radio4&quot; id=&quot;radio4&quot; value=&quot;option4&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
-    &lt;label for=&quot;radio4&quot;&gt;
-    Disabled radio is on
-    &lt;/label&gt;
-&lt;/div&gt;</pre>
+    &#x3C;span class=&#x22;form-check-sign&#x22;&#x3E;&#x3C;/span&#x3E;
+  &#x3C;/label&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;form-check-radio disabled&#x22;&#x3E;
+  &#x3C;label class=&#x22;form-check-label&#x22;&#x3E;
+    &#x3C;input class=&#x22;form-check-input&#x22; type=&#x22;radio&#x22; name=&#x22;exampleRadios1&#x22; id=&#x22;exampleRadios3&#x22; value=&#x22;option3&#x22; disabled=&#x22;&#x22;&#x3E;
+    Disabled Radio is off
+    &#x3C;span class=&#x22;form-check-sign&#x22;&#x3E;&#x3C;/span&#x3E;
+  &#x3C;/label&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;form-check-radio disabled&#x22;&#x3E;
+  &#x3C;label class=&#x22;form-check-label&#x22;&#x3E;
+    &#x3C;input class=&#x22;form-check-input&#x22; type=&#x22;radio&#x22; name=&#x22;exampleRadios1&#x22; id=&#x22;exampleRadios4&#x22; value=&#x22;option3&#x22; checked disabled=&#x22;&#x22;&#x3E;
+    Disabled Radio is on
+    &#x3C;span class=&#x22;form-check-sign&#x22;&#x3E;&#x3C;/span&#x3E;
+  &#x3C;/label&#x3E;
+&#x3C;/div&#x3E;</pre>
 </div>

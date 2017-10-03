@@ -1,381 +1,333 @@
 <h2>Navbar </h2>
-	            <legend></legend>
-	            <p class="space-top">
-	                We restyled the classic Bootstrap Navbar:
-	            </p>
+<legend></legend>
+<p class="space-top">
+    We restyled the classic Bootstrap Navbar:
+</p>
 
-	            <div id="navbar">
-					<nav class="navbar navbar-toggleable-md navbar-default">
-						<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-							<span class="navbar-toggler-icon"></span>
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<a class="navbar-brand" href="#">Navbar</a>
-						<div class="collapse navbar-collapse" id="navbarNavDropdown">
-							<ul class="navbar-nav">
-								<li class="nav-item active">
-							    	<a class="nav-link" href="#">Work in progress... <span class="sr-only">(current)</span></a>
-								</li>
-								<li class="nav-item">
-							    	<a class="nav-link" href="#">Link</a>
-								</li>
-								<li class="nav-item">
-							    	<a class="nav-link" href="#">Link</a>
-								</li>
-								<li class="nav-item dropdown">
-							    	<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							      		Dropdown link
-							    	</a>
-									<ul class="dropdown-menu dropdown-menu-right">
-                                        <li class="dropdown-header">Dropdown header</li>
-                                        <li class="dropdown-item"><a href="#paper-kit">Action</a></li>
-                                        <li class="dropdown-item"><a href="#paper-kit">Another action</a></li>
-                                        <li class="dropdown-item"><a href="#paper-kit">Something else here</a></li>
-                                        <div class="dropdown-divider"></div>
-                                        <li class="dropdown-item"><a href="#paper-kit">Separated link</a></li>
-                                        <div class="dropdown-divider"></div>
-                                        <li class="dropdown-item"><a href="#paper-kit">Another separated link</a></li>
-                                    </ul>
-								</li>
-							</ul>
-						</div>
-					</nav>
-	            </div><!--  end navbar -->
+<nav class="navbar navbar-expand-md navbar-default">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Menu</a>
+    <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#pk">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#pk">Link</a>
+            </li>
+            <li class="nav-item ">
+                <div ngbDropdown class="d-inline-block dropdown">
+                  <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>Dropdown</a>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+                    <a class="dropdown-item">Action - 1</a>
+                    <a class="dropdown-item">Another Action</a>
+                    <a class="dropdown-item">Something else is here</a>
+                  </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-	            <div class="area-line">
+<div class="area-line">
 
-	    <div id="navbarCode">
-	    <pre class="prettyprint">
-&lt;nav class=&quot;navbar navbar-toggleable-md navbar-default&quot;&gt;
-    &lt;button class=&quot;navbar-toggler navbar-toggler-right&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarNavDropdown&quot; aria-controls=&quot;navbarNavDropdown&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
-        &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
-    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNavDropdown&quot;&gt;
-        &lt;ul class=&quot;navbar-nav&quot;&gt;
-            &lt;li class=&quot;nav-item active&quot;&gt;
-                &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Work in progress... &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;nav-item&quot;&gt;
-                &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;nav-item&quot;&gt;
-                &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;nav-item dropdown&quot;&gt;
-                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;http://example.com&quot; id=&quot;navbarDropdownMenuLink&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
-                    Dropdown link
-                &lt;/a&gt;
-                &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdownMenuLink&quot;&gt;
-                    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
-                    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
-                    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
-	    	    &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
-    		    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated Link&lt;/a&gt;
-	    	    &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
-	            &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another separated link&lt;/a&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/nav&gt;</pre>
-	    </div>
-	            </div>
+    <div id="navbarCode">
+    <pre class="prettyprint">
+&#x3C;nav class=&#x22;navbar navbar-expand-md navbar-default&#x22;&#x3E;
+    &#x3C;button class=&#x22;navbar-toggler navbar-toggler-right&#x22; type=&#x22;button&#x22; data-toggle=&#x22;collapse&#x22; data-target=&#x22;#navbar-menu&#x22; aria-controls=&#x22;navbarSupportedContent&#x22; aria-expanded=&#x22;false&#x22; aria-label=&#x22;Toggle navigation&#x22;&#x3E;
+        &#x3C;span class=&#x22;navbar-toggler-icon&#x22;&#x3E;&#x3C;/span&#x3E;
+        &#x3C;span class=&#x22;navbar-toggler-icon&#x22;&#x3E;&#x3C;/span&#x3E;
+        &#x3C;span class=&#x22;navbar-toggler-icon&#x22;&#x3E;&#x3C;/span&#x3E;
+    &#x3C;/button&#x3E;
+    &#x3C;a class=&#x22;navbar-brand&#x22; href=&#x22;#&#x22;&#x3E;Menu&#x3C;/a&#x3E;
+    &#x3C;div class=&#x22;collapse navbar-collapse&#x22; id=&#x22;navbar-menu&#x22;&#x3E;
+        &#x3C;ul class=&#x22;navbar-nav mr-auto&#x22;&#x3E;
+            &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
+                &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#pk&#x22;&#x3E;Link&#x3C;/a&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
+                &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#pk&#x22;&#x3E;Link&#x3C;/a&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li class=&#x22;nav-item &#x22;&#x3E;
+                &#x3C;div ngbDropdown class=&#x22;d-inline-block dropdown&#x22;&#x3E;
+                  &#x3C;a class=&#x22;nav-link&#x22; id=&#x22;dropdownBasic1&#x22; ngbDropdownToggle&#x3E;Dropdown&#x3C;/a&#x3E;
+                  &#x3C;div ngbDropdownMenu aria-labelledby=&#x22;dropdownBasic1&#x22; class=&#x22;dropdown-primary&#x22;&#x3E;
+                    &#x3C;a class=&#x22;dropdown-item&#x22;&#x3E;Action - 1&#x3C;/a&#x3E;
+                    &#x3C;a class=&#x22;dropdown-item&#x22;&#x3E;Another Action&#x3C;/a&#x3E;
+                    &#x3C;a class=&#x22;dropdown-item&#x22;&#x3E;Something else is here&#x3C;/a&#x3E;
+                  &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/li&#x3E;
+        &#x3C;/ul&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;</pre>
+    </div>
+</div>
 
-	            <p class="space-top">
-	                Besides the default navbar, we added 5 new classes for colors: <code>primary</code>, <code>info</code>, <code>success</code>, <code>warning</code>, <code>danger</code>, <code>transparent</code>. If you want to use one of them, you have to replace the <code>navbar-default</code> with the class for the chosen color <code>navbar-#class</code>.
-	            </p>
+<p class="space-top">
+    Besides the default navbar, we added 5 new classes for colors: <code>primary</code>, <code>info</code>, <code>success</code>, <code>warning</code>, <code>danger</code>, <code>transparent</code>. If you want to use one of them, you have to replace the <code>navbar-default</code> with the class for the chosen color <code>navbar-#class</code>.
+</p>
 
-	    <!-- navbar blue -->
-	    <!-- <div id="navbar-primary"> -->
-			<nav class="navbar navbar-toggleable-md bg-primary">
-				<div class="container">
-					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-bar"></span>
-						<span class="navbar-toggler-bar"></span>
-						<span class="navbar-toggler-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Primary Color</a>
-					<div class="collapse navbar-collapse" id="navbar-primary">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-compass" aria-hidden="true"></i>&nbsp;Discover</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Profile</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp;Settings</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-	    <!-- </div> -->
-		<br/>
-	    <!-- navbar azure -->
-	    <!-- <div id="navbar-info"> -->
-			<nav class="navbar navbar-toggleable-md bg-info">
-				<div class="container">
-					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-info" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-bar"></span>
-						<span class="navbar-toggler-bar"></span>
-						<span class="navbar-toggler-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Info Color</a>
-					<div class="collapse navbar-collapse" id="navbar-info">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="nav-link" href="#">Discover</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Profile</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Settings</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-	    <!-- </div> -->
-		<br/>
-	    <!-- navbar green -->
-	    <!-- <div id="navbar-success"> -->
-			<nav class="navbar navbar-toggleable-md bg-success">
-				<div class="container">
-					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-success" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-bar"></span>
-						<span class="navbar-toggler-bar"></span>
-						<span class="navbar-toggler-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Success Color</a>
-					<div class="collapse navbar-collapse" id="navbar-success">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-compass" aria-hidden="true"></i></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-	    <!-- </div> -->
-		<br/>
-	    <!-- navbar orange -->
-	    <!-- <div id="navbar-warning"> -->
-			<nav class="navbar navbar-toggleable-md bg-warning">
-				<div class="container">
-					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-warning" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-bar"></span>
-						<span class="navbar-toggler-bar"></span>
-						<span class="navbar-toggler-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Warning Color</a>
-					<div class="collapse navbar-collapse" id="navbar-warning">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-	    <!-- </div> -->
-		<br/>
-	    <!-- navbar red -->
-	    <!-- <div id="navbar-danger"> -->
-			<nav class="navbar navbar-toggleable-md bg-danger">
-				<div class="container">
-					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-danger" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-bar"></span>
-						<span class="navbar-toggler-bar"></span>
-						<span class="navbar-toggler-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Danger Color</a>
-					<div class="collapse navbar-collapse" id="navbar-danger">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Share</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pin</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		<br/>
-		<!-- navbar transparent -->
-		<div  class="navigation-example">
-			<nav class="navbar navbar-toggleable-md navbar-transparent">
-				<div class="container">
-					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-transparent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-bar"></span>
-						<span class="navbar-toggler-bar"></span>
-						<span class="navbar-toggler-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Transparent</a>
-					<div class="collapse navbar-collapse" id="navbar-transparent">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	            <p class="space-top">
-	                Besides all this customisation, we have an extra navbar. <code>navbar-transparent</code> is a special class that you can to use if you want the navbar to be transparent. We recommend that the part of your page that has the transparent navbar contains something non-cluttered, like an image.
-	            </p>
+<!-- navbar blue -->
+<nav class="navbar navbar-expand-md bg-primary">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right burger-menu" type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Primary Color</a>
+        <div class="collapse navbar-collapse" id="navbar-primary">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="nc-icon nc-compass-05" aria-hidden="true"></i>&nbsp;Discover</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="nc-icon nc-single-02" aria-hidden="true"></i>&nbsp;Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="nc-icon nc-settings-gear-65" aria-hidden="true"></i>&nbsp;Settings</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav><br>
+<nav class="navbar navbar-expand-md bg-info">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-info" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Info Color</a>
+        <div class="collapse navbar-collapse" id="navbar-info">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Discover</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Settings</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav><br>
+<nav class="navbar navbar-expand-md bg-success">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-success" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Success Color</a>
+        <div class="collapse navbar-collapse" id="navbar-success">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="nc-icon nc-compass-05" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="nc-icon nc-single-02" aria-hidden="true"></i> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="nc-icon nc-settings-gear-65" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav><br>
+<nav class="navbar navbar-expand-md bg-warning">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-warning" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Warning Color</a>
+        <div class="collapse navbar-collapse" id="navbar-warning">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav><br>
+<nav class="navbar navbar-expand-md bg-danger">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-danger" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Danger Color</a>
+        <div class="collapse navbar-collapse" id="navbar-danger">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Share</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pin</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav><br>
+<div class="navigation-example">
 
-	    <!-- </div> -->
-	    <!-- end row -->
-
-	    <!--     nav tabs row -->
-	    <div class="tim-row" id="navtabs-row">
-	        <h2> Nav Tabs</h2>
-	        <legend></legend>
-	        <p class="space-top">We changed the look for the nav tabs, so they can easily integrate with the rest of the kit.</p>
-
-            <div class="nav-tabs-navigation">
-
-                <ngb-tabset>
-                  <ngb-tab title="Home">
-                    <ng-template ngbTabContent>
-                      <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p>
-                    </ng-template>
-                  </ngb-tab>
-                  <ngb-tab title="Profile">
-                    <ng-template ngbTabContent>
-                      <p>Here is your profile.</p>
-                    </ng-template>
-                  </ngb-tab>
-                  <ngb-tab title="Messages">
-                    <ng-template ngbTabContent>
-                      <p>Here are your messages.</p>
-                    </ng-template>
-                  </ngb-tab>
-                </ngb-tabset>
+    <nav class="navbar navbar-expand-md navbar-transparent">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-transparent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Transparent</a>
+            <div class="collapse navbar-collapse" id="navbar-transparent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                    </li>
+                </ul>
             </div>
+        </div>
+    </nav>
+</div>
+<p class="space-top">
+    Besides all this customisation, we have an extra navbar. <code>navbar-transparent</code> is a special class that you can to use if you want the navbar to be transparent. We recommend that the part of your page that has the transparent navbar contains something non-cluttered, like an image.
+</p>
 
-	        <div class="area-line">
-	    		<div id="navTabs">
-	    			<pre class="prettyprint">
-&lt;!-- Nav tabs --&gt;
-&lt;div class=&quot;nav-tabs-navigation&quot;&gt;
-    &lt;div class=&quot;nav-tabs-wrapper&quot;&gt;
-        &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
-            &lt;li class=&quot;nav-item&quot;&gt;
-                &lt;a class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; href=&quot;#home&quot; role=&quot;tab&quot;&gt;Home&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;nav-item&quot;&gt;
-                &lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#profile&quot; role=&quot;tab&quot;&gt;Profile&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;nav-item&quot;&gt;
-                &lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#messages&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;nav-item dropdown&quot;&gt;
-                &lt;a class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Settings&lt;/a&gt;
-                &lt;ul class=&quot;dropdown-menu dropdown-menu-right dropdown-info&quot;&gt;
-                    &lt;li class=&quot;dropdown-header&quot; data-toggle=&quot;tab&quot; href=&quot;#action&quot;&gt;Header&lt;/li&gt;
-                    &lt;li class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; href=&quot;#action&quot;&gt;
-                        &lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; href=&quot;#another-action&quot;&gt;
-                        &lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;
-                    &lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- Tab panes --&gt;
-&lt;div class=&quot;tab-content text-center&quot;&gt;
-    &lt;div class=&quot;tab-pane active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot;&gt;Here is information about home.&lt;/div&gt;
-    &lt;div class=&quot;tab-pane&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot;&gt;Here is your profile.&lt;/div&gt;
-    &lt;div class=&quot;tab-pane&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot;&gt;Here are your messages.&lt;/div&gt;
-    &lt;div class=&quot;tab-pane&quot; id=&quot;action&quot; role=&quot;tabpanel&quot;&gt;Vestibulum ex velit, cursus in mauris in, egestas tempor orci.&lt;/div&gt;
-    &lt;div class=&quot;tab-pane&quot; id=&quot;another-action&quot; role=&quot;tabpanel&quot;&gt;Ut sem metus, lacinia id lobortis vel, mollis ut quam.&lt;/div&gt;
-&lt;/div&gt;</pre>
-	    	</div>
-	    </div>
+<!-- </div> -->
+<!-- end row -->
+
+<!--     nav tabs row -->
+<div class="tim-row" id="navtabs-row">
+<h2> Nav Tabs</h2>
+<legend></legend>
+<p class="space-top">We changed the look for the nav tabs, so they can easily integrate with the rest of the kit. </p>
+<p><b>For full documentation, see this <a href="https://ng-bootstrap.github.io/#/components/tabs/examples" target="_blank">link</a>.</b></p>
+
+<div class="nav-tabs-navigation">
+	<div class="nav-tabs-wrapper">
+		<ngb-tabset [justify]="'center'">
+		  <ngb-tab title="Home">
+			<ng-template ngbTabContent>
+			  <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p>
+			</ng-template>
+		  </ngb-tab>
+		  <ngb-tab title="Profile">
+			<ng-template ngbTabContent>
+			  <p>Here is your profile.</p>
+			</ng-template>
+		  </ngb-tab>
+		  <ngb-tab title="Messages">
+			<ng-template ngbTabContent>
+			  <p>Here are your messages.</p>
+			</ng-template>
+		  </ngb-tab>
+		</ngb-tabset>
 	</div>
-	    <!--     end row -->
+</div>
 
-	    <!-- nav pills row -->
-	    <div class="tim-row" id="navpills-row">
-	            <h2> Nav Pills</h2>
-	            <legend></legend>
-	            <p class="space-top">
-	                We changed the design for the Bootstrap nav pills into something a bit more fresh. We also added more color classes for customisation.
-	            </p>
-				<!-- Nav pills -->
-				<ngb-tabset type="pills" class="nav-pills-danger">
-				  <ngb-tab title="Info">
-				    <ng-template ngbTabContent>
-
-				    </ng-template>
-				  </ngb-tab>
-				  <ngb-tab title="Menu">
-					<ng-template ngbTabContent>
-
-					</ng-template>
-				  </ngb-tab>
-				  <ngb-tab title="Concept">
-				    <ng-template ngbTabContent>
-				    </ng-template>
-				  </ngb-tab>
-				</ngb-tabset>
-				
-	            <div class="area-line">
-	    			<div id="navPills" >
-	    				<pre class="prettyprint">
-&lt;!-- Nav pills --&gt;
-&lt;ul class=&quot;nav nav-pills nav-pills-danger&quot;&gt;
-    &lt;li class=&quot;nav-item&quot;&gt;
-        &lt;a class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; href=&quot;#0&quot;&gt;Info&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;nav-item&quot;&gt;
-        &lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#0&quot;&gt;Menu&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;nav-item&quot;&gt;
-        &lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#0&quot;&gt;Concept&lt;/a&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- Pill panes --&gt;
-&lt;div class=&quot;tab-content&quot;&gt;
-    &lt;div class=&quot;tab-pane active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;tab-pane&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;tab-pane&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;tab-pane&quot; id=&quot;settings&quot; role=&quot;tabpanel&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</pre>
-		    </div>
+<div class="area-line">
+	<div id="navTabs">
+		<pre class="prettyprint">
+&#x3C;div class=&#x22;nav-tabs-navigation&#x22;&#x3E;
+	&#x3C;div class=&#x22;nav-tabs-wrapper&#x22;&#x3E;
+		&#x3C;ngb-tabset [justify]=&#x22;&#x27;center&#x27;&#x22;&#x3E;
+		  &#x3C;ngb-tab title=&#x22;Home&#x22;&#x3E;
+			&#x3C;ng-template ngbTabContent&#x3E;
+			  &#x3C;p&#x3E;Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.&#x3C;/p&#x3E;
+			&#x3C;/ng-template&#x3E;
+		  &#x3C;/ngb-tab&#x3E;
+		  &#x3C;ngb-tab title=&#x22;Profile&#x22;&#x3E;
+			&#x3C;ng-template ngbTabContent&#x3E;
+			  &#x3C;p&#x3E;Here is your profile.&#x3C;/p&#x3E;
+			&#x3C;/ng-template&#x3E;
+		  &#x3C;/ngb-tab&#x3E;
+		  &#x3C;ngb-tab title=&#x22;Messages&#x22;&#x3E;
+			&#x3C;ng-template ngbTabContent&#x3E;
+			  &#x3C;p&#x3E;Here are your messages.&#x3C;/p&#x3E;
+			&#x3C;/ng-template&#x3E;
+		  &#x3C;/ngb-tab&#x3E;
+		&#x3C;/ngb-tabset&#x3E;
+	&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
 		</div>
 	</div>
+</div>
+<!--     end row -->
+
+<!-- nav pills row -->
+<div class="tim-row" id="navpills-row">
+<h2> Nav Pills</h2>
+<legend></legend>
+<p class="space-top">
+    We changed the design for the Bootstrap nav pills into something a bit more fresh. We also added more color classes for customisation.
+</p>
+<p><b>For full documentation, see this <a href="https://ng-bootstrap.github.io/#/components/tabs/examples" target="_blank">link</a>.</b></p>
+<!-- Nav pills -->
+<ngb-tabset type="pills" class="nav-pills-danger">
+  <ngb-tab title="Info">
+    <ng-template ngbTabContent>
+
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab title="Menu">
+	<ng-template ngbTabContent>
+
+	</ng-template>
+  </ngb-tab>
+  <ngb-tab title="Concept">
+    <ng-template ngbTabContent>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>
+
+<div class="area-line">
+	<div id="navPills" >
+		<pre class="prettyprint">
+&#x3C;ngb-tabset type=&#x22;pills&#x22; class=&#x22;nav-pills-danger&#x22;&#x3E;
+  &#x3C;ngb-tab title=&#x22;Info&#x22;&#x3E;
+    &#x3C;ng-template ngbTabContent&#x3E;
+
+    &#x3C;/ng-template&#x3E;
+  &#x3C;/ngb-tab&#x3E;
+  &#x3C;ngb-tab title=&#x22;Menu&#x22;&#x3E;
+&#x9;&#x3C;ng-template ngbTabContent&#x3E;
+
+&#x9;&#x3C;/ng-template&#x3E;
+  &#x3C;/ngb-tab&#x3E;
+  &#x3C;ngb-tab title=&#x22;Concept&#x22;&#x3E;
+    &#x3C;ng-template ngbTabContent&#x3E;
+    &#x3C;/ng-template&#x3E;
+  &#x3C;/ngb-tab&#x3E;
+&#x3C;/ngb-tabset&#x3E;</pre>
+	    </div>
+	</div>
+</div>
 	    <!-- end row -->

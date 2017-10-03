@@ -443,3 +443,8 @@
         }
     }
 }
+app-documentation{
+    a.btn:not([href]):not([tabindex]){
+        color: $white-color !important;
+    }
+}

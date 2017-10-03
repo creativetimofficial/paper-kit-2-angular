@@ -1,8 +1,20 @@
 <div class="tim-title">
-    <h3>Progress Bar</h3>
+    <h2>Progress Bar</h2>
     <br/>
 </div>
+<p><b>For full documentation, see this <a href="https://ng-bootstrap.github.io/#/components/progressbar/examples" target="_blank">link</a>.</b></p>
+<br>
 <ngb-progressbar type="success" [value]="25">25</ngb-progressbar><br>
 <ngb-progressbar type="info" [value]="50">Copying file <b>2 of 4</b>...</ngb-progressbar><br>
-<ngb-progressbar type="warning" [value]="75" [striped]="true" [animated]="true"><i>50%</i></ngb-progressbar><br>
+<ngb-progressbar type="warning" [value]="75" [striped]="true" [animated]="true"><i>75%</i></ngb-progressbar><br>
 <ngb-progressbar type="danger" [value]="100" [striped]="true">Completed!</ngb-progressbar>
+<div class="area-line">
+
+    <div id="progressbarCode">
+    <pre class="prettyprint">
+&#x3C;ngb-progressbar type=&#x22;success&#x22; [value]=&#x22;25&#x22;&#x3E;25&#x3C;/ngb-progressbar&#x3E;&#x3C;br&#x3E;
+&#x3C;ngb-progressbar type=&#x22;info&#x22; [value]=&#x22;50&#x22;&#x3E;Copying file &#x3C;b&#x3E;2 of 4&#x3C;/b&#x3E;...&#x3C;/ngb-progressbar&#x3E;&#x3C;br&#x3E;
+&#x3C;ngb-progressbar type=&#x22;warning&#x22; [value]=&#x22;75&#x22; [striped]=&#x22;true&#x22; [animated]=&#x22;true&#x22;&#x3E;&#x3C;i&#x3E;75%&#x3C;/i&#x3E;&#x3C;/ngb-progressbar&#x3E;&#x3C;br&#x3E;
+&#x3C;ngb-progressbar type=&#x22;danger&#x22; [value]=&#x22;100&#x22; [striped]=&#x22;true&#x22;&#x3E;Completed!&#x3C;/ngb-progressbar&#x3E;</pre>
+    </div>
+</div>

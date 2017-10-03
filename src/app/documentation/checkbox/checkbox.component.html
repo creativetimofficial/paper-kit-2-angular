@@ -3,59 +3,67 @@
                    <h2> Checkboxes </h2>
                    <legend></legend>
                   <br>
-                       <div class="checkbox">
-                           <input id="checkbox1" type="checkbox">
-                           <label for="checkbox1">
-                               Unchecked
-                           </label>
-                       </div>
-                       <div class="checkbox">
-                          <input id="checkbox2" type="checkbox" checked="">
-                          <label for="checkbox2">
-                               Checked
-                           </label>
-                        </div>
-                       <div class="checkbox">
-                           <input id="checkbox3" type="checkbox" disabled="">
-                           <label for="checkbox3">
-                               Disabled unchecked
-                           </label>
-                       </div>
-                       <div class="checkbox">
-                          <input id="checkbox4" type="checkbox" checked="" disabled="">
-                          <label for="checkbox4">
-                              Disabled checked
-                          </label>
-                       </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="">
+                      Unchecked
+                      <span class="form-check-sign"></span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="" checked="">
+                      Checked
+                      <span class="form-check-sign"></span>
+                    </label>
+                  </div>
+                  <div class="form-check disabled">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="" disabled="">
+                      Disabled unchecked
+                      <span class="form-check-sign"></span>
+                    </label>
+                  </div>
+                  <div class="form-check disabled">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="" checked="" disabled="">
+                      Disabled checked
+                      <span class="form-check-sign"></span>
+                    </label>
+                  </div>
                    <p>Usage can be done via Data Attributes:
 
                    </p>
                    <div id="checkboxDataAttribute">
                        <pre class="prettyprint">
-&lt;div class=&quot;checkbox&quot;&gt;
-   &lt;input id=&quot;checkbox1&quot; type=&quot;checkbox&quot;&gt;
-   &lt;label for=&quot;checkbox1&quot;&gt;
-       Unchecked
-   &lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;checkbox&quot;&gt;
-  &lt;input id=&quot;checkbox2&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
-  &lt;label for=&quot;checkbox2&quot;&gt;
-       Checked
-   &lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;checkbox&quot;&gt;
-   &lt;input id=&quot;checkbox3&quot; type=&quot;checkbox&quot; disabled=&quot;&quot;&gt;
-   &lt;label for=&quot;checkbox3&quot;&gt;
-       Disabled unchecked
-   &lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;checkbox&quot;&gt;
-  &lt;input id=&quot;checkbox4&quot; type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
-  &lt;label for=&quot;checkbox4&quot;&gt;
-      Disabled checked
-  &lt;/label&gt;
-&lt;/div&gt;</pre>
+&#x3C;div class=&#x22;form-check&#x22;&#x3E;
+ &#x3C;label class=&#x22;form-check-label&#x22;&#x3E;
+   &#x3C;input class=&#x22;form-check-input&#x22; type=&#x22;checkbox&#x22; value=&#x22;&#x22;&#x3E;
+   Unchecked
+   &#x3C;span class=&#x22;form-check-sign&#x22;&#x3E;&#x3C;/span&#x3E;
+ &#x3C;/label&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;form-check&#x22;&#x3E;
+ &#x3C;label class=&#x22;form-check-label&#x22;&#x3E;
+   &#x3C;input class=&#x22;form-check-input&#x22; type=&#x22;checkbox&#x22; value=&#x22;&#x22; checked=&#x22;&#x22;&#x3E;
+   Checked
+   &#x3C;span class=&#x22;form-check-sign&#x22;&#x3E;&#x3C;/span&#x3E;
+ &#x3C;/label&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;form-check disabled&#x22;&#x3E;
+ &#x3C;label class=&#x22;form-check-label&#x22;&#x3E;
+   &#x3C;input class=&#x22;form-check-input&#x22; type=&#x22;checkbox&#x22; value=&#x22;&#x22; disabled=&#x22;&#x22;&#x3E;
+   Disabled unchecked
+   &#x3C;span class=&#x22;form-check-sign&#x22;&#x3E;&#x3C;/span&#x3E;
+ &#x3C;/label&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;form-check disabled&#x22;&#x3E;
+ &#x3C;label class=&#x22;form-check-label&#x22;&#x3E;
+   &#x3C;input class=&#x22;form-check-input&#x22; type=&#x22;checkbox&#x22; value=&#x22;&#x22; checked=&#x22;&#x22; disabled=&#x22;&#x22;&#x3E;
+   Disabled checked
+   &#x3C;span class=&#x22;form-check-sign&#x22;&#x3E;&#x3C;/span&#x3E;
+ &#x3C;/label&#x3E;
+&#x3C;/div&#x3E;</pre>
                </div>
            </div>
        <!-- end row -->

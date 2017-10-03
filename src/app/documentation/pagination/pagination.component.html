@@ -1,8 +1,19 @@
 <div class="tim-title">
-    <h3>Pagination</h3>
+    <h2>Pagination</h2>
     <br/>
 </div>
+<p><b>For full documentation, see this <a href="https://ng-bootstrap.github.io/#/components/pagination/examples" target="_blank">link</a>.</b></p>
+<br>
 <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
-
 <br/>
-<ngb-pagination [collectionSize]="70" [(page)]="page1" [boundaryLinks]="true"></ngb-pagination>
+<ngb-pagination [collectionSize]="100" [(page)]="page1" [maxSize]="5" [rotate]="true"></ngb-pagination>
+
+<div class="area-line">
+
+    <div id="paginationCode">
+    <pre class="prettyprint">
+&#x3C;ngb-pagination [collectionSize]=&#x22;70&#x22; [(page)]=&#x22;page&#x22; aria-label=&#x22;Default pagination&#x22;&#x3E;&#x3C;/ngb-pagination&#x3E;
+&#x3C;br/&#x3E;
+&#x3C;ngb-pagination [collectionSize]=&#x22;100&#x22; [(page)]=&#x22;page1&#x22; [maxSize]=&#x22;5&#x22; [rotate]=&#x22;true&#x22;&#x3E;&#x3C;/ngb-pagination&#x3E;</pre>
+    </div>
+</div>

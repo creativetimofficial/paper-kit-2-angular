@@ -30,6 +30,7 @@ import { PopoverComponent } from './popover/popover.component';
 @NgModule({
     imports: [
         CommonModule,
+        FormsModule,
         RouterModule.forChild(DocumentationRoutes),
         NgbModule,
         NouisliderModule

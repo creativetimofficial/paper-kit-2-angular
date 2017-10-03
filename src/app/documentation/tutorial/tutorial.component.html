@@ -22,7 +22,115 @@ The Paper Kit is built on top of Bootstrap 4, so you can safely use it on your e
     The easiest way to start is to use our start-up template where all the files are already included and ready to use.
 </p>
 <!--         end row -->
+<ul>
+    <li><p>Install NodeJs from <a href="https://nodejs.org/en" target="_blank">NodeJs Official Page</a></p></li>
+    <li><p>Open Terminal</p></li>
+    <li><p>Go to your file project</p></li>
+    <li><p>Run in terminal: <b>npm install -g @angular/cli@latest</b></p></li>
+    <li><p>Then: <b>npm install</b></p></li>
+    <li><p>And: <b>ng serve</b></p></li>
+    <li><p>Navigate to: <a href="http://localhost:4200/" target="_blank">http://localhost:4200/</a></p></li>
 
+</ul>
+
+<h4 class="title">
+    <b>Live Production on Heroku</b>
+</h4>
+<p>Replace package.json with this code.</p>
+<pre class="prettyprint">
+{{ '{' }}
+  &#x22;name&#x22;: &#x22;md-angular-cli-pro&#x22;,
+  &#x22;version&#x22;: &#x22;1.4.2&#x22;,
+  &#x22;license&#x22;: &#x22;http://md-pro-angular.creative-tim.com/documentation/tutorial&#x22;,
+  &#x22;repository&#x22;: {{ '{' }}
+    &#x22;type&#x22;: &#x22;git&#x22;,
+    &#x22;url&#x22;: &#x22;https://github.com/creativetimofficial/material-dashboard-pro-angular.git&#x22;
+  {{ '}' }},
+  &#x22;scripts&#x22;: {{ '{' }}
+    &#x22;postinstall&#x22;: &#x22;ng build --aot -prod&#x22;,
+    &#x22;ng&#x22;: &#x22;ng&#x22;,
+    &#x22;start&#x22;: &#x22;node server.js&#x22;,
+    &#x22;build&#x22;: &#x22;ng build&#x22;,
+    &#x22;test&#x22;: &#x22;ng test&#x22;,
+    &#x22;lint&#x22;: &#x22;ng lint&#x22;,
+    &#x22;e2e&#x22;: &#x22;ng e2e&#x22;
+  {{ '}' }},
+  &#x22;engines&#x22;: {{ '{' }}
+    &#x22;node&#x22;: &#x22;6.11.1&#x22;,
+    &#x22;npm&#x22;: &#x22;3.10.9&#x22;
+  {{ '}' }},
+  &#x22;private&#x22;: true,
+  &#x22;dependencies&#x22;: {{ '{' }}
+    &#x22;@agm/core&#x22;: &#x22;1.0.0-beta.0&#x22;,
+    &#x22;@angular/animations&#x22;: &#x22;4.3.1&#x22;,
+    &#x22;@angular/cdk&#x22;: &#x22;^2.0.0-beta.10&#x22;,
+    &#x22;@angular/cli&#x22;: &#x22;^1.2.5&#x22;,
+    &#x22;@angular/common&#x22;: &#x22;4.3.1&#x22;,
+    &#x22;@angular/compiler&#x22;: &#x22;4.3.1&#x22;,
+    &#x22;@angular/compiler-cli&#x22;: &#x22;4.3.1&#x22;,
+    &#x22;@angular/core&#x22;: &#x22;4.3.1&#x22;,
+    &#x22;@angular/forms&#x22;: &#x22;4.3.1&#x22;,
+    &#x22;@angular/http&#x22;: &#x22;4.3.1&#x22;,
+    &#x22;@angular/material&#x22;: &#x22;^2.0.0-beta.10&#x22;,
+    &#x22;@angular/platform-browser&#x22;: &#x22;4.3.1&#x22;,
+    &#x22;@angular/platform-browser-dynamic&#x22;: &#x22;4.3.1&#x22;,
+    &#x22;@angular/platform-server&#x22;: &#x22;4.3.1&#x22;,
+    &#x22;@angular/router&#x22;: &#x22;4.3.1&#x22;,
+    &#x22;angular2-material-datepicker&#x22;: &#x22;^0.5.0&#x22;,
+    &#x22;animate.css&#x22;: &#x22;3.5.2&#x22;,
+    &#x22;arrive&#x22;: &#x22;2.3.1&#x22;,
+    &#x22;bootstrap&#x22;: &#x22;3.3.5&#x22;,
+    &#x22;bootstrap-material-design&#x22;: &#x22;^0.5.10&#x22;,
+    &#x22;bootstrap-notify&#x22;: &#x22;3.1.3&#x22;,
+    &#x22;bootstrap-select&#x22;: &#x22;1.12.2&#x22;,
+    &#x22;bootstrap-tagsinput&#x22;: &#x22;0.7.1&#x22;,
+    &#x22;chartist&#x22;: &#x22;0.9.4&#x22;,
+    &#x22;chartist-plugin-zoom&#x22;: &#x22;0.4.0&#x22;,
+    &#x22;core-js&#x22;: &#x22;2.4.1&#x22;,
+    &#x22;datatables&#x22;: &#x22;1.10.12&#x22;,
+    &#x22;datatables.net-bs&#x22;: &#x22;1.10.12&#x22;,
+    &#x22;datatables.net-responsive&#x22;: &#x22;2.1.1&#x22;,
+    &#x22;eonasdan-bootstrap-datetimepicker&#x22;: &#x22;4.17.47&#x22;,
+    &#x22;fullcalendar&#x22;: &#x22;3.4.0&#x22;,
+    &#x22;googleapis&#x22;: &#x22;19.0.0&#x22;,
+    &#x22;jasny-bootstrap&#x22;: &#x22;^3.1.3&#x22;,
+    &#x22;jquery&#x22;: &#x22;1.12.4&#x22;,
+    &#x22;moment&#x22;: &#x22;^2.18.1&#x22;,
+    &#x22;ng2-nouislider&#x22;: &#x22;1.6.1&#x22;,
+    &#x22;ng2-select&#x22;: &#x22;^1.2.0&#x22;,
+    &#x22;ngx-chips&#x22;: &#x22;^1.4.6&#x22;,
+    &#x22;nouislider&#x22;: &#x22;9.2.0&#x22;,
+    &#x22;rxjs&#x22;: &#x22;5.4.2&#x22;,
+    &#x22;twitter-bootstrap-wizard&#x22;: &#x22;1.2.0&#x22;,
+    &#x22;validate&#x22;: &#x22;3.0.1&#x22;,
+    &#x22;web-animations-js&#x22;: &#x22;2.2.2&#x22;,
+    &#x22;zone.js&#x22;: &#x22;0.8.4&#x22;
+  {{ '}' }},
+  &#x22;devDependencies&#x22;: {{ '{' }}
+    &#x22;@angular/cli&#x22;: &#x22;^1.2.5&#x22;,
+    &#x22;@angular/compiler-cli&#x22;: &#x22;2.4.0&#x22;,
+    &#x22;@types/bootstrap&#x22;: &#x22;3.3.32&#x22;,
+    &#x22;@types/chartist&#x22;: &#x22;0.9.34&#x22;,
+    &#x22;@types/jasmine&#x22;: &#x22;2.5.38&#x22;,
+    &#x22;@types/jquery&#x22;: &#x22;1.10.31&#x22;,
+    &#x22;@types/node&#x22;: &#x22;6.0.73&#x22;,
+    &#x22;codelyzer&#x22;: &#x22;2.0.0&#x22;,
+    &#x22;jasmine-core&#x22;: &#x22;2.5.2&#x22;,
+    &#x22;jasmine-spec-reporter&#x22;: &#x22;3.2.0&#x22;,
+    &#x22;karma&#x22;: &#x22;1.4.1&#x22;,
+    &#x22;karma-chrome-launcher&#x22;: &#x22;2.0.0&#x22;,
+    &#x22;karma-cli&#x22;: &#x22;1.0.1&#x22;,
+    &#x22;karma-coverage-istanbul-reporter&#x22;: &#x22;0.2.0&#x22;,
+    &#x22;karma-jasmine&#x22;: &#x22;1.1.0&#x22;,
+    &#x22;karma-jasmine-html-reporter&#x22;: &#x22;0.2.2&#x22;,
+    &#x22;protractor&#x22;: &#x22;5.1.0&#x22;,
+    &#x22;ts-node&#x22;: &#x22;2.0.0&#x22;,
+    &#x22;tslint&#x22;: &#x22;4.5.0&#x22;,
+    &#x22;typescript&#x22;: &#x22;^2.3.4&#x22;
+  {{ '}' }}
+{{ '}' }}
+</pre>
+<p>Also check this tutorial: <a href="https://paucls.wordpress.com/2016/11/25/deploy-angular-2-cli-app-to-heroku/">Deploy Angular 2 CLI app to Heroku</a>.</p>
 <!--         file structure row -->
 <h2 class="text-center">File Structure</h2>
 <legend></legend>
