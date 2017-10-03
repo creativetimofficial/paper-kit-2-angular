@@ -25,7 +25,9 @@ export class NavbarComponent implements OnInit {
   }
   isDocumentation(){
       var titlee = this.location.prepareExternalUrl(this.location.path());
-      if( titlee === '/documentation' ){
+      titlee = titlee.split('/')[1]
+      console.log(titlee);
+      if( titlee === 'documentation' ){
         return true;
       }
       else {
