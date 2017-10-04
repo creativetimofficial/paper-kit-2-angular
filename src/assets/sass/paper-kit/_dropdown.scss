@@ -130,7 +130,8 @@
 }
 .dropdown-menu-right{
     right: -2px;
-    left: auto;
+    left: auto!important;
+
 }
 
 //  the style for opening dropdowns on mobile devices; for the desktop version check the _responsive.scss file
@@ -209,12 +210,12 @@
         content: "";
         display: inline-block;
         position: absolute;
-        right: 12px;
+        left: 12px;
         top: -11px;
     }
-    #dropdown-row .dropdown .dropdown-menu:before{
-        left: 12px !important;
-        right: auto;
+    .dropdown .dropdown-menu-right.dropdown-menu:before{
+        right: 12px;
+        left: auto;
     }
     .navbar-nav li .dropdown-menu:after,
     #dropdown-row .dropdown .dropdown-menu:after,
@@ -227,12 +228,12 @@
         content: "";
         display: inline-block;
         position: absolute;
-        right: 12px;
+        left: 12px;
         top: -10px;
     }
-    #dropdown-row .dropdown .dropdown-menu:after{
-        left: 12px !important;
-        right: auto;
+     .dropdown .dropdown-menu-right.dropdown-menu:after{
+        right: 12px;
+        left: auto;
     }
     #dropdown-row .dropdown .dropdown-menu{
         left: 15px;
