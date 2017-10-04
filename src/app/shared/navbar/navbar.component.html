@@ -35,13 +35,14 @@
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a href="https://pk2-angular.creative-tim.com/documentation/tutorial" class="nav-link"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
+                    <a [routerLink]="['/documentation/tutorial']" class="nav-link"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
                 </li>
                 <!-- <li class="nav-item" *ngIf="isHome()">
                     <a href="https://www.creative-tim.com/product/paper-kit-2-pro?ref=pk2-free-local" target="_blank" class="btn btn-danger btn-round disabled">Upgrade to Pro</a>
                 </li> -->
                 <li class="nav-item" *ngIf="!isHome()">
-                    <a [routerLink]="['/home']" class="nav-link"><i class="nc-icon nc-layout-11"></i>Components</a>
+                        <a [routerLink]="['/home']" class="nav-link" *ngIf="isDocumentation()"><i class="nc-icon nc-layout-11"></i>Back to Kit</a>
+                        <a [routerLink]="['/home']" class="nav-link" *ngIf="!isDocumentation()"><i class="nc-icon nc-layout-11"></i>Components</a>
                 </li>
                 <li class="nav-item" *ngIf="isDocumentation()">
                     <a href="https://github.com/creativetimofficial/pk-free-angular/issues?ref=pk2-free-local" target="_blank" class="nav-link"><i class="nc-icon nc-book-bookmark"></i>Have an issue</a>

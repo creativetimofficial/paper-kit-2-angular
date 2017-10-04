@@ -1,3 +1,10 @@
+<h2 class="text-center">License</h2>
+<legend></legend>
+<p class="space-top">
+    When you purchase an item from <a href="https://www.creative-tim.com/" target="_blank">Creative Tim</a>, you are actually purchasing a license to use that item. All our free items are under MIT license. All our premium items are covered by our Personal and Developer licenses. In order to understand the rights and restrictions that come with your purchase, please read the details from our <a href="https://www.creative-tim.com/license?ref=license-page-pk2-angular" target="_blank">Official License Page</a>.
+</p>
+
+
 <h2 class="text-center">Short Description and Usage</h2>
 <legend></legend>
 <p class="space-top">
@@ -26,9 +33,9 @@ The Paper Kit is built on top of Bootstrap 4, so you can safely use it on your e
     <li><p>Install NodeJs from <a href="https://nodejs.org/en" target="_blank">NodeJs Official Page</a></p></li>
     <li><p>Open Terminal</p></li>
     <li><p>Go to your file project</p></li>
-    <li><p>Run in terminal: <b>npm install -g @angular/cli@latest</b></p></li>
-    <li><p>Then: <b>npm install</b></p></li>
-    <li><p>And: <b>ng serve</b></p></li>
+    <li><p>Run in terminal: <code>npm install -g @angular/cli@latest</code></p></li>
+    <li><p>Then: <code>npm install</code></p></li>
+    <li><p>And: <code>ng serve</code></p></li>
     <li><p>Navigate to: <a href="http://localhost:4200/" target="_blank">http://localhost:4200/</a></p></li>
 
 </ul>
@@ -39,94 +46,65 @@ The Paper Kit is built on top of Bootstrap 4, so you can safely use it on your e
 <p>Replace package.json with this code.</p>
 <pre class="prettyprint">
 {{ '{' }}
-  &#x22;name&#x22;: &#x22;md-angular-cli-pro&#x22;,
-  &#x22;version&#x22;: &#x22;1.4.2&#x22;,
-  &#x22;license&#x22;: &#x22;http://md-pro-angular.creative-tim.com/documentation/tutorial&#x22;,
-  &#x22;repository&#x22;: {{ '{' }}
-    &#x22;type&#x22;: &#x22;git&#x22;,
-    &#x22;url&#x22;: &#x22;https://github.com/creativetimofficial/material-dashboard-pro-angular.git&#x22;
+  "name": "pk2-angular",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {{ '{' }}
+    "postinstall": "ng build --aot -prod",
+    "ng": "ng",
+    "start": "node server.js",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   {{ '}' }},
-  &#x22;scripts&#x22;: {{ '{' }}
-    &#x22;postinstall&#x22;: &#x22;ng build --aot -prod&#x22;,
-    &#x22;ng&#x22;: &#x22;ng&#x22;,
-    &#x22;start&#x22;: &#x22;node server.js&#x22;,
-    &#x22;build&#x22;: &#x22;ng build&#x22;,
-    &#x22;test&#x22;: &#x22;ng test&#x22;,
-    &#x22;lint&#x22;: &#x22;ng lint&#x22;,
-    &#x22;e2e&#x22;: &#x22;ng e2e&#x22;
+  "engines": {{ '{' }}
+    "node": "6.11.1",
+    "npm": "3.10.9"
   {{ '}' }},
-  &#x22;engines&#x22;: {{ '{' }}
-    &#x22;node&#x22;: &#x22;6.11.1&#x22;,
-    &#x22;npm&#x22;: &#x22;3.10.9&#x22;
+  "private": true,
+  "dependencies": {{ '{' }}
+    "@angular/cli": "1.4.1",
+    "@angular/animations": "4.3.1",
+    "@angular/common": "4.3.1",
+    "@angular/compiler": "4.3.1",
+    "@angular/compiler-cli": "4.3.1",
+    "@angular/core": "4.3.1",
+    "@angular/forms": "4.3.1",
+    "@angular/http": "4.3.1",
+    "@angular/platform-browser": "4.3.1",
+    "@angular/platform-browser-dynamic": "4.3.1",
+    "@angular/router": "4.3.1",
+    "@ng-bootstrap/ng-bootstrap": "1.0.0-beta.4",
+    "bootstrap": "4.0.0-beta",
+    "core-js": "^2.4.1",
+    "jquery": "3.2.1",
+    "jw-bootstrap-switch-ng2": "1.0.3",
+    "ng2-nouislider": "1.6.1",
+    "nouislider": "9.2.0",
+    "popper.js": "^1.12.3",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4",
+    "typescript": "2.3.3"
   {{ '}' }},
-  &#x22;private&#x22;: true,
-  &#x22;dependencies&#x22;: {{ '{' }}
-    &#x22;@agm/core&#x22;: &#x22;1.0.0-beta.0&#x22;,
-    &#x22;@angular/animations&#x22;: &#x22;4.3.1&#x22;,
-    &#x22;@angular/cdk&#x22;: &#x22;^2.0.0-beta.10&#x22;,
-    &#x22;@angular/cli&#x22;: &#x22;^1.2.5&#x22;,
-    &#x22;@angular/common&#x22;: &#x22;4.3.1&#x22;,
-    &#x22;@angular/compiler&#x22;: &#x22;4.3.1&#x22;,
-    &#x22;@angular/compiler-cli&#x22;: &#x22;4.3.1&#x22;,
-    &#x22;@angular/core&#x22;: &#x22;4.3.1&#x22;,
-    &#x22;@angular/forms&#x22;: &#x22;4.3.1&#x22;,
-    &#x22;@angular/http&#x22;: &#x22;4.3.1&#x22;,
-    &#x22;@angular/material&#x22;: &#x22;^2.0.0-beta.10&#x22;,
-    &#x22;@angular/platform-browser&#x22;: &#x22;4.3.1&#x22;,
-    &#x22;@angular/platform-browser-dynamic&#x22;: &#x22;4.3.1&#x22;,
-    &#x22;@angular/platform-server&#x22;: &#x22;4.3.1&#x22;,
-    &#x22;@angular/router&#x22;: &#x22;4.3.1&#x22;,
-    &#x22;angular2-material-datepicker&#x22;: &#x22;^0.5.0&#x22;,
-    &#x22;animate.css&#x22;: &#x22;3.5.2&#x22;,
-    &#x22;arrive&#x22;: &#x22;2.3.1&#x22;,
-    &#x22;bootstrap&#x22;: &#x22;3.3.5&#x22;,
-    &#x22;bootstrap-material-design&#x22;: &#x22;^0.5.10&#x22;,
-    &#x22;bootstrap-notify&#x22;: &#x22;3.1.3&#x22;,
-    &#x22;bootstrap-select&#x22;: &#x22;1.12.2&#x22;,
-    &#x22;bootstrap-tagsinput&#x22;: &#x22;0.7.1&#x22;,
-    &#x22;chartist&#x22;: &#x22;0.9.4&#x22;,
-    &#x22;chartist-plugin-zoom&#x22;: &#x22;0.4.0&#x22;,
-    &#x22;core-js&#x22;: &#x22;2.4.1&#x22;,
-    &#x22;datatables&#x22;: &#x22;1.10.12&#x22;,
-    &#x22;datatables.net-bs&#x22;: &#x22;1.10.12&#x22;,
-    &#x22;datatables.net-responsive&#x22;: &#x22;2.1.1&#x22;,
-    &#x22;eonasdan-bootstrap-datetimepicker&#x22;: &#x22;4.17.47&#x22;,
-    &#x22;fullcalendar&#x22;: &#x22;3.4.0&#x22;,
-    &#x22;googleapis&#x22;: &#x22;19.0.0&#x22;,
-    &#x22;jasny-bootstrap&#x22;: &#x22;^3.1.3&#x22;,
-    &#x22;jquery&#x22;: &#x22;1.12.4&#x22;,
-    &#x22;moment&#x22;: &#x22;^2.18.1&#x22;,
-    &#x22;ng2-nouislider&#x22;: &#x22;1.6.1&#x22;,
-    &#x22;ng2-select&#x22;: &#x22;^1.2.0&#x22;,
-    &#x22;ngx-chips&#x22;: &#x22;^1.4.6&#x22;,
-    &#x22;nouislider&#x22;: &#x22;9.2.0&#x22;,
-    &#x22;rxjs&#x22;: &#x22;5.4.2&#x22;,
-    &#x22;twitter-bootstrap-wizard&#x22;: &#x22;1.2.0&#x22;,
-    &#x22;validate&#x22;: &#x22;3.0.1&#x22;,
-    &#x22;web-animations-js&#x22;: &#x22;2.2.2&#x22;,
-    &#x22;zone.js&#x22;: &#x22;0.8.4&#x22;
-  {{ '}' }},
-  &#x22;devDependencies&#x22;: {{ '{' }}
-    &#x22;@angular/cli&#x22;: &#x22;^1.2.5&#x22;,
-    &#x22;@angular/compiler-cli&#x22;: &#x22;2.4.0&#x22;,
-    &#x22;@types/bootstrap&#x22;: &#x22;3.3.32&#x22;,
-    &#x22;@types/chartist&#x22;: &#x22;0.9.34&#x22;,
-    &#x22;@types/jasmine&#x22;: &#x22;2.5.38&#x22;,
-    &#x22;@types/jquery&#x22;: &#x22;1.10.31&#x22;,
-    &#x22;@types/node&#x22;: &#x22;6.0.73&#x22;,
-    &#x22;codelyzer&#x22;: &#x22;2.0.0&#x22;,
-    &#x22;jasmine-core&#x22;: &#x22;2.5.2&#x22;,
-    &#x22;jasmine-spec-reporter&#x22;: &#x22;3.2.0&#x22;,
-    &#x22;karma&#x22;: &#x22;1.4.1&#x22;,
-    &#x22;karma-chrome-launcher&#x22;: &#x22;2.0.0&#x22;,
-    &#x22;karma-cli&#x22;: &#x22;1.0.1&#x22;,
-    &#x22;karma-coverage-istanbul-reporter&#x22;: &#x22;0.2.0&#x22;,
-    &#x22;karma-jasmine&#x22;: &#x22;1.1.0&#x22;,
-    &#x22;karma-jasmine-html-reporter&#x22;: &#x22;0.2.2&#x22;,
-    &#x22;protractor&#x22;: &#x22;5.1.0&#x22;,
-    &#x22;ts-node&#x22;: &#x22;2.0.0&#x22;,
-    &#x22;tslint&#x22;: &#x22;4.5.0&#x22;,
-    &#x22;typescript&#x22;: &#x22;^2.3.4&#x22;
+  "devDependencies": {{ '{' }}
+    "@angular/compiler-cli": "4.3.1",
+    "@angular/language-service": "4.3.1",
+    "@types/jasmine": "2.5.45",
+    "@types/node": "~6.0.60",
+    "codelyzer": "~3.0.1",
+    "jasmine-core": "~2.6.2",
+    "jasmine-spec-reporter": "~4.1.0",
+    "karma": "~1.7.0",
+    "karma-chrome-launcher": "~2.1.1",
+    "karma-cli": "~1.0.1",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-coverage-istanbul-reporter": "^1.2.1",
+    "protractor": "~5.1.2",
+    "ts-node": "~3.0.4",
+    "tslint": "~5.3.2",
+    "typescript": "2.3.3"
   {{ '}' }}
 {{ '}' }}
 </pre>
@@ -142,110 +120,111 @@ The Paper Kit is built on top of Bootstrap 4, so you can safely use it on your e
     Let's take it one by one:
 </p>
 <pre class="prettyprint">
-PAPER-KIT2
-├── README.md
-├── angular-cli.json
-├── e2e
-├── karma.conf.js
-├── package.json
-├── protractor.conf.js
-├── server.js
-├── src
-│   ├── app
-│   │   ├── app.component.html
-│   │   ├── app.component.scss
-│   │   ├── app.component.spec.ts
-│   │   ├── app.component.ts
-│   │   ├── app.module.ts
-│   │   ├── app.routing.ts
-│   │   ├── components
-│   │   │   ├── basicelements
-│   │   │   │   ├── basicelements.component.html
-│   │   │   │   ├── basicelements.component.scss
-│   │   │   │   ├── basicelements.component.spec.ts
-│   │   │   │   └── basicelements.component.ts
-│   │   │   ├── components.component.html
-│   │   │   ├── components.component.ts
-│   │   │   ├── components.module.ts
-│   │   │   ├── modal
-│   │   │   │   ├── modal.component.html
-│   │   │   │   ├── modal.component.scss
-│   │   │   │   ├── modal.component.spec.ts
-│   │   │   │   └── modal.component.ts
-│   │   │   ├── navigation
-│   │   │   │   ├── navigation.component.html
-│   │   │   │   ├── navigation.component.scss
-│   │   │   │   ├── navigation.component.spec.ts
-│   │   │   │   └── navigation.component.ts
-│   │   │   ├── notification
-│   │   │   │   ├── notification.component.html
-│   │   │   │   ├── notification.component.scss
-│   │   │   │   ├── notification.component.spec.ts
-│   │   │   │   └── notification.component.ts
-│   │   │   ├── nucleoicons
-│   │   │   │   ├── nucleoicons.component.html
-│   │   │   │   ├── nucleoicons.component.scss
-│   │   │   │   ├── nucleoicons.component.spec.ts
-│   │   │   │   └── nucleoicons.component.ts
-│   │   │   └── typography
-│   │   │       ├── typography.component.html
-│   │   │       ├── typography.component.scss
-│   │   │       ├── typography.component.spec.ts
-│   │   │       └── typography.component.ts
-│   │   ├── home
-│   │   │   ├── home.component.html
-│   │   │   ├── home.component.scss
-│   │   │   ├── home.component.spec.ts
-│   │   │   ├── home.component.ts
-│   │   │   └── home.module.ts
-│   │   ├── landing
-│   │   │   ├── landing.component.html
-│   │   │   ├── landing.component.scss
-│   │   │   ├── landing.component.spec.ts
-│   │   │   └── landing.component.ts
-│   │   ├── profile
-│   │   │   ├── profile.component.html
-│   │   │   ├── profile.component.scss
-│   │   │   ├── profile.component.spec.ts
-│   │   │   └── profile.component.ts
-│   │   ├── shared
-│   │   │   ├── footer
-│   │   │   │   ├── footer.component.html
-│   │   │   │   ├── footer.component.scss
-│   │   │   │   ├── footer.component.spec.ts
-│   │   │   │   └── footer.component.ts
-│   │   │   └── navbar
-│   │   │       ├── navbar.component.html
-│   │   │       ├── navbar.component.scss
-│   │   │       ├── navbar.component.spec.ts
-│   │   │       └── navbar.component.ts
-│   │   └── signup
-│   │       ├── signup.component.html
-│   │       ├── signup.component.scss
-│   │       ├── signup.component.spec.ts
-│   │       └── signup.component.ts
-│   ├── assets
-│   │   ├── css
-│   │   ├── fonts
-│   │   ├── img
-│   │   ├── js
-│   │   └── sass
-│   │       ├── paper-kit
-│   │       └── paper-kit.scss
-│   ├── environments
-│   │   ├── environment.prod.ts
-│   │   └── environment.ts
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── main.ts
-│   ├── polyfills.ts
-│   ├── styles.scss
-│   ├── test.ts
-│   ├── tsconfig.app.json
-│   ├── tsconfig.spec.json
-│   └── typings.d.ts
-├── tsconfig.json
-└── tslint.json</pre>
+    pk2-angular
+    ├── CHANGELOG.md
+    ├── LICENSE.md
+    ├── README.md
+    ├── angular-cli.json
+    ├── documentation
+    │   └── tutorial-components.html
+    ├── e2e
+    ├── karma.conf.js
+    ├── package-lock.json
+    ├── package.json
+    ├── protractor.conf.js
+    ├── src
+    │   ├── app
+    │   │   ├── app.component.html
+    │   │   ├── app.component.scss
+    │   │   ├── app.component.spec.ts
+    │   │   ├── app.component.ts
+    │   │   ├── app.module.ts
+    │   │   ├── app.routing.ts
+    │   │   ├── components
+    │   │   │   ├── basicelements
+    │   │   │   │   ├── basicelements.component.html
+    │   │   │   │   ├── basicelements.component.scss
+    │   │   │   │   ├── basicelements.component.spec.ts
+    │   │   │   │   └── basicelements.component.ts
+    │   │   │   ├── components.component.html
+    │   │   │   ├── components.component.ts
+    │   │   │   ├── components.module.ts
+    │   │   │   ├── modal
+    │   │   │   │   ├── modal.component.html
+    │   │   │   │   ├── modal.component.scss
+    │   │   │   │   ├── modal.component.spec.ts
+    │   │   │   │   └── modal.component.ts
+    │   │   │   ├── navigation
+    │   │   │   │   ├── navigation.component.html
+    │   │   │   │   ├── navigation.component.scss
+    │   │   │   │   ├── navigation.component.spec.ts
+    │   │   │   │   └── navigation.component.ts
+    │   │   │   ├── notification
+    │   │   │   │   ├── notification.component.html
+    │   │   │   │   ├── notification.component.scss
+    │   │   │   │   ├── notification.component.spec.ts
+    │   │   │   │   └── notification.component.ts
+    │   │   │   ├── nucleoicons
+    │   │   │   │   ├── nucleoicons.component.html
+    │   │   │   │   ├── nucleoicons.component.scss
+    │   │   │   │   ├── nucleoicons.component.spec.ts
+    │   │   │   │   └── nucleoicons.component.ts
+    │   │   │   └── typography
+    │   │   │       ├── typography.component.html
+    │   │   │       ├── typography.component.scss
+    │   │   │       ├── typography.component.spec.ts
+    │   │   │       └── typography.component.ts
+    │   │   ├── home
+    │   │   │   ├── home.component.html
+    │   │   │   ├── home.component.scss
+    │   │   │   ├── home.component.spec.ts
+    │   │   │   ├── home.component.ts
+    │   │   │   └── home.module.ts
+    │   │   ├── landing
+    │   │   │   ├── landing.component.html
+    │   │   │   ├── landing.component.scss
+    │   │   │   ├── landing.component.spec.ts
+    │   │   │   └── landing.component.ts
+    │   │   ├── profile
+    │   │   │   ├── profile.component.html
+    │   │   │   ├── profile.component.scss
+    │   │   │   ├── profile.component.spec.ts
+    │   │   │   └── profile.component.ts
+    │   │   ├── shared
+    │   │   │   ├── footer
+    │   │   │   │   ├── footer.component.html
+    │   │   │   │   ├── footer.component.scss
+    │   │   │   │   ├── footer.component.spec.ts
+    │   │   │   │   └── footer.component.ts
+    │   │   │   └── navbar
+    │   │   │       ├── navbar.component.html
+    │   │   │       ├── navbar.component.scss
+    │   │   │       ├── navbar.component.spec.ts
+    │   │   │       └── navbar.component.ts
+    │   │   └── signup
+    │   │       ├── signup.component.html
+    │   │       ├── signup.component.scss
+    │   │       ├── signup.component.spec.ts
+    │   │       └── signup.component.ts
+    │   ├── assets
+    │   │   ├── css
+    │   │   ├── fonts
+    │   │   ├── img
+    │   │   └── sass
+    │   │       ├── paper-kit
+    │   │       └── paper-kit.scss
+    │   ├── environments
+    │   ├── favicon.ico
+    │   ├── index.html
+    │   ├── main.ts
+    │   ├── polyfills.ts
+    │   ├── styles.scss
+    │   ├── test.ts
+    │   ├── tsconfig.app.json
+    │   ├── tsconfig.spec.json
+    │   └── typings.d.ts
+    ├── tsconfig.json
+    └── tslint.json</pre>
 <!--         end row -->
 
 <!--         restyled components row -->

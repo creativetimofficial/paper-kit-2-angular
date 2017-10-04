@@ -29,7 +29,6 @@ export class ComponentsComponent implements OnInit {
     ngOnInit() {
         let input_group_focus = document.getElementsByClassName('form-control');
         let input_group = document.getElementsByClassName('input-group');
-        console.log(input_group);
         for (let i = 0; i < input_group.length; i++) {
             input_group[i].children[0].addEventListener('focus', function (){
                 input_group[i].classList.add('input-group-focus');

@@ -17,6 +17,7 @@ import { LabelsComponent } from './labels/labels.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { TooltipsComponent } from './tooltips/tooltips.component';
 import { PopoverComponent } from './popover/popover.component';
+import { NgBootstrapComponent } from './ng-bootstrap/ng-bootstrap.component';
 
 export const DocumentationRoutes: Routes = [{
     path: '',
@@ -71,5 +72,8 @@ export const DocumentationRoutes: Routes = [{
     },{
         path: 'popover',
         component: PopoverComponent
+    },{
+        path: 'ng-bootstrap',
+        component: NgBootstrapComponent
     }]
 }];

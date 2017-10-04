@@ -26,6 +26,7 @@ import { LabelsComponent } from './labels/labels.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { TooltipsComponent } from './tooltips/tooltips.component';
 import { PopoverComponent } from './popover/popover.component';
+import { NgBootstrapComponent } from './ng-bootstrap/ng-bootstrap.component';
 
 @NgModule({
     imports: [
@@ -54,7 +55,8 @@ import { PopoverComponent } from './popover/popover.component';
         LabelsComponent,
         DatepickerComponent,
         TooltipsComponent,
-        PopoverComponent
+        PopoverComponent,
+        NgBootstrapComponent
     ],
      entryComponents: [NgbdModalContent],
     exports: [ DocumentationComponent ]
