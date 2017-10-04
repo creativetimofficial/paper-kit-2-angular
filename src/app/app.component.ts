@@ -5,6 +5,8 @@ import 'rxjs/add/operator/filter';
 import { DOCUMENT } from '@angular/platform-browser';
 import { LocationStrategy, PlatformLocation, Location } from '@angular/common';
 
+declare var _gaq:Function;
+
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -12,8 +14,25 @@ import { LocationStrategy, PlatformLocation, Location } from '@angular/common';
 })
 export class AppComponent implements OnInit {
     private _router: Subscription;
+    private currentRoute:string;
+    _location: Location;
 
-    constructor( private renderer : Renderer, private router: Router, @Inject(DOCUMENT,) private document: any, private element : ElementRef, public location: Location) {}
+    constructor( private renderer : Renderer, private router: Router, @Inject(DOCUMENT,) private document: any, private element : ElementRef, public location: Location) {
+        this._location = location;
+        router.events.subscribe((event:any) => {
+            // Send GA tracking on NavigationEnd event. You may wish to add other
+            // logic here too or change which event to work with
+            if (event instanceof NavigationEnd) {
+                // When the route is '/', location.path actually returns ''.
+                let newRoute = location.path() || '/';
+                // If the route has changed, send the new route to analytics.
+                if (this.currentRoute != newRoute) {
+                    _gaq('send', 'pageview', newRoute);
+                    this.currentRoute = newRoute;
+                }
+            }
+        });
+    }
     ngOnInit() {
         var navbar : HTMLElement = this.element.nativeElement.children[0].children[0];
         this._router = this.router.events.filter(event => event instanceof NavigationEnd).subscribe((event: NavigationEnd) => {
