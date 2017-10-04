@@ -1,6 +1,6 @@
 # [Paper Kit 2 Angular - Free Bootstrap 4 UI Kit](https://pk2-angular.creative-tim.com/) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
-![Paper Kit 2 Angular](http://s3.amazonaws.com/creativetim_bucket/products/61/original/opt_pk2_thumbnail.jpg "Paper Kit 2 Angular Free")
+![Paper Kit 2 Angular](http://s3.amazonaws.com/creativetim_bucket/products/65/original/opt_pk2_angular_thumbnail.jpg "Paper Kit 2 Angular Free")
 
 Paper Kit 2 Angular is a free Bootstrap 4 UI Kit with pale colors, beautiful typography and thoughtful drawings. We created it having paper and drawings in mind.
 
