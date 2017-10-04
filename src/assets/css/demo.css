@@ -231,9 +231,7 @@
 .demo-height .motto{
     padding-top: 20% !important;
 }
-.demo-header-image{
-    background-image: url('../img/city.jpg');
-}
+
 .demo-header .motto{
     color: #FFFFFF;
     padding-top: 15%;
@@ -806,7 +804,6 @@
     line-height: 38px;
 }
 .info .description .btn{
-    width: 240px;
     font-weight: 500;
 }
 #buyButtonHeroes{

@@ -482,6 +482,9 @@
     }
 
     .navbar-translate{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
         width: 100%;
         position: relative;
         @include transform-translate-x(0);
