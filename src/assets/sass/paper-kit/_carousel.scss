@@ -98,8 +98,13 @@
     .carousel-control-prev,
     .carousel-control-next{
         opacity: 1;
+        @include transition(300ms, linear);
+
     }
 }
-ngb-carousel:focus{
-    outline: none !important;
+ngb-carousel{
+    &:focus{
+        outline: none !important;
+    }
+
 }

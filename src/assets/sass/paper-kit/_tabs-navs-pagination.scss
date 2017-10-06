@@ -397,3 +397,9 @@
 .nav-pills .nav-link{
     border-radius: 0;
 }
+.pagination{
+    display: inline-block;
+    .page-item{
+        display: inline-block;
+    }
+}
