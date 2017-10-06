@@ -27,8 +27,8 @@ Once you download the archive, you will be able find a tutorial page inside it e
 
 ## Links:
 
-+ [Live Preview](https://pk2-angular.creative-tim.com/)
-+ [Paper Kit Bootstrap 4](http://demos.creative-tim.com/paper-kit-2)
++ [Live Preview Angular](https://pk2-angular.creative-tim.com/)
++ [Paper Kit Bootstrap 4 HTML](http://demos.creative-tim.com/paper-kit-2)
 
 ## Quick start
 
