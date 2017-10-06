@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
                api.openPopup('twitter');
              },
              template: '<i class="fa fa-twitter"></i>',
-             url: 'https://pk2-angular.creative-tim.com/'
+             url: 'http://pk2-angular.creative-tim.com/'
            });
        }
 
@@ -49,7 +49,7 @@ export class HomeComponent implements OnInit {
                api.openPopup('twitter');
              },
              template: '<i class="fa fa-twitter"></i><p class="hidden-lg-up">Twitter</p>',
-             url: 'https://pk2-angular.creative-tim.com/'
+             url: 'http://pk2-angular.creative-tim.com/'
            });
        }
 
@@ -66,7 +66,7 @@ export class HomeComponent implements OnInit {
                api.openPopup('facebook');
              },
              template: '<i class="fa fa-facebook-square"></i>',
-             url: 'https://pk2-angular.creative-tim.com/'
+             url: 'http://pk2-angular.creative-tim.com/'
            });
        }
 
@@ -83,7 +83,7 @@ export class HomeComponent implements OnInit {
                api.openPopup('facebook');
              },
              template: '<i class="fa fa-facebook-square"></i><p class="hidden-lg-up">Facebook</p>',
-             url: 'https://pk2-angular.creative-tim.com/'
+             url: 'http://pk2-angular.creative-tim.com/'
            });
        }
 
@@ -100,7 +100,7 @@ export class HomeComponent implements OnInit {
                api.openPopup('googlePlus');
              },
              template: '<i class="fa fa-google"></i>',
-             url: 'https://pk2-angular.creative-tim.com/'
+             url: 'http://pk2-angular.creative-tim.com/'
            });
        }
 
@@ -117,7 +117,7 @@ export class HomeComponent implements OnInit {
                api.openPopup('googlePlus');
              },
              template: '<i class="fa fa-google"></i><p class="hidden-lg-up">Google</p>',
-             url: 'https://pk2-angular.creative-tim.com/'
+             url: 'http://pk2-angular.creative-tim.com/'
            });
        }
     }
