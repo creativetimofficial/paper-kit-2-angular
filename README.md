@@ -2,11 +2,13 @@
 
 ![Paper Kit 2 Angular](http://s3.amazonaws.com/creativetim_bucket/products/65/original/opt_pk2_angular_thumbnail.jpg "Paper Kit 2 Angular Free")
 
-Paper Kit 2 Angular is a free Bootstrap 4 UI Kit with pale colors, beautiful typography and thoughtful drawings. We created it having paper and drawings in mind.
+Paper Kit 2 Angular is a free Bootstrap 4 UI Kit with pale colors, beautiful typography built for Angular 4 CLI.
 
-Any elements that is vital to code a web project is already here, fully coded. All components are fully responsive and look great on every screen size. Transitions, shadows, colors, they all resemble the flow you would have using pieces of paper.
+All components are fully responsive and look great on every screen size. Transitions, shadows, colors, they all resemble the flow you would have using pieces of paper.
 
-We have created the UI Kit kit having pastel colors and paper in mind. It feels light, fresh and easy to go through. It features beautiful typography, font icons and thoughtful layouts.
+We have created Paper UI Kit kit having pastel colors and paper in mind. It feels light, fresh and easy to go through.
+
+Paper Kit 2 Angular is using Ng Bootstrap (https://ng-bootstrap.github.io/#/home), as core framework.
 
 **Bootstrap 4 support**
 
