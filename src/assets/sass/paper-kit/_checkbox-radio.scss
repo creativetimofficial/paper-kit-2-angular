@@ -27,11 +27,7 @@
         top: 0;
         background-color: #AAA7A4;
         border: 1px solid $light-gray;
-        -webkit-transition: opacity 0.3s linear;
-        -moz-transition: opacity 0.3s linear;
-        -o-transition: opacity 0.3s linear;
-        -ms-transition: opacity 0.3s linear;
-        transition: opacity 0.3s linear;
+        @include transition-opacity(0.3s, linear);
     }
     .form-check-sign::after{
         font-family: 'FontAwesome';
@@ -82,12 +78,9 @@
 .form-check-radio{
     .form-check-label{
         padding-left: 2rem;
+
         .form-check-sign::after{
-            -webkit-transition: opacity 0.3s linear;
-            -moz-transition: opacity 0.3s linear;
-            -o-transition: opacity 0.3s linear;
-            -ms-transition: opacity 0.3s linear;
-            transition: opacity 0.3s linear;
+
         }
     }
     &.disabled{
@@ -119,6 +112,9 @@
 .form-check-radio input[type="radio"] + .form-check-sign:after,
 .form-check-radio input[type="radio"] {
     opacity: 0;
+    display: block;
+    content: "";
+    @include transition-opacity(1s, linear);
 }
 
 .form-check-radio input[type="radio"]:checked + .form-check-sign::after {
@@ -141,28 +137,28 @@
     color: $dark-gray;
 }
 
-.form-check:not(.disabled):hover{
-    .form-check-sign:after{
-        opacity: .50;
-    }
-}
-.form-check-radio:not(.disabled){
-    .form-check-label:hover{
-        .form-check-sign::after{
-            font-family: 'FontAwesome';
-            content: "\f192";
-            position: absolute;
-            font-size: 22px;
-            opacity: .50;
-            top: -5px;
-            left: 5px;
-        }
-
-        input[type="radio"]:checked + .form-check-sign::after{
-            opacity: 1;
-        }
-        .form-check-sign::before{
-            opacity: 0;
-        }
-    }
-}
+// .form-check:not(.disabled):hover{
+//     .form-check-sign:after{
+//         opacity: .50;
+//     }
+// }
+// .form-check-radio:not(.disabled){
+//     .form-check-label:hover{
+//         .form-check-sign::after{
+//             font-family: 'FontAwesome';
+//             content: "\f192";
+//             position: absolute;
+//             font-size: 22px;
+//             opacity: .50;
+//             top: -5px;
+//             left: 5px;
+//         }
+//
+//         input[type="radio"]:checked + .form-check-sign::after{
+//             opacity: 1;
+//         }
+//         .form-check-sign::before{
+//             opacity: 0;
+//         }
+//     }
+// }
