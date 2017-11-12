@@ -478,6 +478,8 @@
 
        &.show .dropdown-menu{
            display: block;
+           background-color: $white-color;
+           border-radius: 12px;
        }
     }
 
@@ -641,13 +643,13 @@
 
         .dropdown.show .dropdown-menu,
         .dropdown .dropdown-menu{
-            background-color: transparent;
+            // background-color: transparent;
             border: 0;
             transition: none;
             -webkit-box-shadow: none;
             box-shadow: none;
             width: auto;
-            border-radius: 0;
+            // border-radius: 0;
 
 
             .dropdown-item:hover,
