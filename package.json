@@ -2,6 +2,10 @@
   "name": "pk2-angular",
   "version": "1.0.0",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/creativetimofficial/pk2-angular.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -24,7 +28,7 @@
     "bootstrap": "4.0.0-beta",
     "core-js": "^2.4.1",
     "jquery": "3.2.1",
-    "jw-bootstrap-switch-ng2": "1.0.3",
+    "jw-bootstrap-switch-ng2": "1.0.8",
     "ng2-nouislider": "1.6.1",
     "nouislider": "9.2.0",
     "popper.js": "^1.12.3",
