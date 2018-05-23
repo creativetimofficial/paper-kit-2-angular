@@ -1,6 +1,6 @@
 # [Paper Kit 2 Angular - Free Bootstrap 4 UI Kit](https://pk2-angular.creative-tim.com/) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
-![Paper Kit 2 Angular](http://s3.amazonaws.com/creativetim_bucket/products/65/original/opt_pk2_angular_thumbnail.jpg "Paper Kit 2 Angular Free")
+![Paper Kit 2 Angular](https://s3.amazonaws.com/creativetim_bucket/products/65/original/opt_pk2_angular_thumbnail.jpg "Paper Kit 2 Angular Free")
 
 Paper Kit 2 Angular is a free Bootstrap 4 UI Kit with pale colors, beautiful typography built for Angular 4 CLI.
 
@@ -37,7 +37,7 @@ Once you download the archive, you will be able find a tutorial page inside it e
 Quick start options:
 
 - [Download from Github](https://github.com/creativetimofficial/pk2-angular.git).
-- [Download from Creative Tim](http://www.creative-tim.com/product/paper-kit-2-angular).
+- [Download from Creative Tim](https://www.creative-tim.com/product/paper-kit-2-angular).
 - Clone the repo: `git clone https://github.com/creativetimofficial/pk2-angular.git`.
 
 
@@ -156,19 +156,19 @@ pk2-angular
 
 ### License
 
-- Copyright 2017 Creative Tim (http://www.creative-tim.com)
+- Copyright 2017 Creative Tim (https://www.creative-tim.com)
 - Licensed under MIT (https://github.com/timcreative/paper-kit/blob/master/LICENSE.md)
 
 
 ## Useful Links
 
-More products from Creative Tim: <http://www.creative-tim.com/products>
+More products from Creative Tim: <https://www.creative-tim.com/products>
 
 Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
 
-Freebies: <http://www.creative-tim.com/products>
+Freebies: <https://www.creative-tim.com/products>
 
-Affiliate Program (earn money): <http://www.creative-tim.com/affiliates/new>
+Affiliate Program (earn money): <https://www.creative-tim.com/affiliates/new>
 
 Social Media:
 
@@ -184,5 +184,5 @@ Instagram: <https://instagram.com/creativetimofficial>
 
 [CHANGELOG]: ./CHANGELOG.md
 [LICENSE]: ./LICENSE.md
-[version-badge]: https://img.shields.io/badge/version-1.0.0-blue.svg
+[version-badge]: https://img.shields.io/badge/version-1.0.1-blue.svg
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
