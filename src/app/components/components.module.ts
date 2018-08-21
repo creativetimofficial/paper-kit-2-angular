@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { NouisliderModule } from 'ng2-nouislider';
-import { JWBootstrapSwitchModule } from 'jw-bootstrap-switch-ng2';
+import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 
 import { BasicelementsComponent } from './basicelements/basicelements.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -20,7 +20,7 @@ import { NgbdModalContent } from './modal/modal.component';
         FormsModule,
         NgbModule,
         NouisliderModule,
-        JWBootstrapSwitchModule
+        JwBootstrapSwitchNg2Module
     ],
     declarations: [
         ComponentsComponent,
