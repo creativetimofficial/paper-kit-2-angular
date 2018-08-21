@@ -90,9 +90,11 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-group" aria-hidden="true"></i></span>
+                <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" (focus)="focus=true" (blur)="focus=false" >
+                    <div class="input-group-append">
+                      <span class="input-group-text" id="basic-addon1"><i class="fa fa-group" aria-hidden="true"></i></span>
+                    </div>
                 </div>
             </div>
         </div>

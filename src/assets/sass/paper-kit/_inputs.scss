@@ -19,7 +19,6 @@
     font-size: $font-size-base;
     @include input-size($padding-base-vertical, $padding-label-horizontal, $height-base);
     @include box-shadow(none);
-
     &:focus{
            background-color: $white-bg;
            border: 1px solid $dark-gray;
@@ -72,13 +71,6 @@
         border-bottom-color: transparent;
     }
 }
-.input-group{
-    &.input-group-focus{
-        .input-group-addon{
-              border-color: $dark-gray;
-        }
-    }
-}
 
 .input-lg{
     height: 55px;
@@ -96,41 +88,13 @@
     }
 }
 
-
-.input-group-addon {
-    background-color: $white-bg;
-    // border: solid 1px $table-line-color;
-    border-radius: $border-radius-base;
-
-    &.no-border{
-        border: medium none !important;
-    }
-
-    .has-success &,
-    .has-error &{
-        background-color: $white-color;
-    }
-    .has-error .form-control:focus + &{
-        color: $danger-color;
-    }
-    .has-success .form-control:focus + &{
-        color: $success-color;
-    }
-    .form-control:focus + &,
-    .form-control:focus ~ &{
-        background-color: $white-color;
-    }
-}
-
 .input-group .form-control:first-child,
-.input-group-addon:first-child,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
     border-right: 0 none;
     padding-right: 0;
 }
 .input-group .form-control:last-child,
-.input-group-addon:last-child,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child) {
     border-left: 0 none;
@@ -139,13 +103,6 @@
     background-color: $light-gray;
     color: $default-color;
     cursor: not-allowed;
-}
-.input-group[disabled]{
-    & .input-group-addon{
-        background-color: $light-gray;
-        cursor: not-allowed;
-        border-color: $medium-gray;
-    }
 }
 
 .input-group-btn .btn{
@@ -185,9 +142,32 @@ textarea.form-control{
         }
     }
 }
-.form-group-no-border{
-    .form-control,
-    .input-group-addon{
-        border: 0 !important;
+.input-group{
+  .input-group-append .input-group-text{
+    background: transparent;
+    border: 1px solid #DDDDDD;
+    border-left: none;
+    @include transition(300ms, linear);
+
+  }
+  .input-group-prepend .input-group-text{
+    margin-right: 0;
+    background: transparent;
+    border: 1px solid #DDDDDD;
+    @include transition(300ms, linear);
+  }
+  &.input-group-focus {
+    .input-group-prepend .input-group-text {
+      border: 1px solid $dark-gray !important;
     }
+    .input-group-append .input-group-text {
+      border: 1px solid $dark-gray !important;
+
+    }
+    &.form-group-no-border{
+      .input-group-prepend .input-group-text{
+        border-left: transparent !important;
+      }
+    }
+  }
 }
