@@ -1,3 +1,12 @@
+## [1.2.0] - 2019-01-09
+### Updates
+- updated Angular to latest version(Angular 7)
+- updated Bootstrap to 4.1.2
+- updated all dependencies to fix the warnings
+- fixed error with responsive menu
+- fixed design errors for datepicker + tooltips
+
+
 ## [1.1.0] - 2018-08-21
 ### Updates
 - updated Angular to latest version
