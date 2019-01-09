@@ -16,7 +16,7 @@
                     </div>
                 </div>
 
-                <h2 class="presentation-subtitle text-center">Free Bootstrap 4 UI Kit for Angular 6</h2>
+                <h2 class="presentation-subtitle text-center">Free Bootstrap 4 UI Kit for Angular 7</h2>
             </div>
         </div>
         <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
@@ -93,19 +93,24 @@
                             </div>
                             <form class="register-form">
                                 <label>Email</label>
-                                <div class="input-group form-group-no-border">
-                                    <span class="input-group-addon">
+                                <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">
                                         <i class="nc-icon nc-email-85"></i>
                                     </span>
-                                    <input type="text" class="form-control" placeholder="Email">
+                                  </div>
+
+                                    <input type="text" class="form-control" placeholder="Email" (focus)="focus=true" (blur)="focus=false" >
                                 </div>
 
                                 <label>Password</label>
-                                <div class="input-group form-group-no-border">
-                                    <span class="input-group-addon">
+                                <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">
                                         <i class="nc-icon nc-key-25"></i>
                                     </span>
-                                    <input type="text" class="form-control" placeholder="Password">
+                                  </div>
+                                    <input type="text" class="form-control" placeholder="Password" (focus)="focus1=true" (blur)="focus1=false" >
                                 </div>
                                 <button class="btn btn-danger btn-block btn-round">Register</button>
                             </form>

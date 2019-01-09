@@ -7,7 +7,7 @@ ngb-datepicker{
     position: absolute !important;
     -webkit-box-shadow: 0 2px rgba(17, 16, 15, 0.1), 0 2px 10px rgba(17, 16, 15, 0.1);
     box-shadow: 0 2px rgba(17, 16, 15, 0.1), 0 2px 10px rgba(17, 16, 15, 0.1);
-    &:focus{
+    & *:focus{
         outline: none !important;
     }
     .ngb-dp-header{
@@ -18,17 +18,17 @@ ngb-datepicker{
                 padding: 1px;
                 text-align: center;
                 z-index: 1;
-                height: 20px;
-                line-height: 20px;
-                width: 20px;
+                line-height: 31px;
                 .ngb-dp-navigation-chevron{
                     border-radius: 4px;
-                    height: 27px;
-                    width: 27px;
-                    line-height: 28px;
+                    height: unset !important;
+                    width: unset !important;
                     font-size: 12px;
+                    margin-left: 0.15rem;
                     border-radius: 50%;
                     text-align: center;
+                    border-width: 0px;
+                    transform: none !important;
                     &:before{
                         content: "\f053"!important;
                         border: none !important;
@@ -39,11 +39,14 @@ ngb-datepicker{
                         transform: none!important;
                         color: black;
                     }
-                    &.right:before{
-                        transform: rotate(180deg)!important;
-                        color: black;
-                    }
                 }
+            }
+            .right{
+              .ngb-dp-navigation-chevron{
+                &:before{
+                    content: "\f054"!important;
+                  }
+              }
             }
             ngb-datepicker-navigation-select{
                 .custom-select{
@@ -83,6 +86,9 @@ ngb-datepicker{
                     }
                     div[ng-reflect-selected="true"]{
                         background-color: $primary-color !important;
+                    }
+                    &:focus{
+
                     }
                 }
             }

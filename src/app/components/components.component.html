@@ -125,12 +125,14 @@
                     <div class='col-sm-6'>
                         <form class="form-inline">
                             <div class="form-group">
-                                <div class="input-group date">
+                                <div class="input-group date" [ngClass]="{'input-group-focus':focus===true}">
                                     <input class="form-control" placeholder="yyyy-mm-dd"
-                                         name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()">
-                                    <span class="input-group-addon">
-                                        <span class="glyphicon glyphicon-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                                    </span>
+                                         name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" (focus)="focus=true" (blur)="focus=false" />
+                                    <div class="input-group-append">
+                                        <span class="glyphicon glyphicon-calendar input-group-text">
+                                          <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </form>

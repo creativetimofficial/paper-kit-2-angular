@@ -14,6 +14,7 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 export class ComponentsComponent implements OnInit {
     page = 4;
     page1 = 5;
+    focus;
     date: {year: number, month: number};
     model: NgbDateStruct;
     constructor( private renderer : Renderer) {}

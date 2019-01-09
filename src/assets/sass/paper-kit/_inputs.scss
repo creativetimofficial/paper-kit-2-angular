@@ -143,6 +143,7 @@ textarea.form-control{
     }
 }
 .input-group{
+  background: $white-color;
   .input-group-append .input-group-text{
     background: transparent;
     border: 1px solid #DDDDDD;
@@ -162,12 +163,21 @@ textarea.form-control{
     }
     .input-group-append .input-group-text {
       border: 1px solid $dark-gray !important;
-
     }
-    &.form-group-no-border{
-      .input-group-prepend .input-group-text{
-        border-left: transparent !important;
-      }
+  }
+  &.form-group-no-border{
+
+    .input-group-prepend .input-group-text{
+      border-right: transparent !important;
+      background: $white-color !important;
+        border: 1px solid $white-color !important;
+      @include transition(300ms, linear);
+    }
+    .input-group-append .input-group-text{
+      border-left: transparent !important;
+      background: $white-color !important;
+        border: 1px solid $white-color !important;
+      @include transition(300ms, linear);
     }
   }
 }
