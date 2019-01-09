@@ -421,6 +421,7 @@
     .nav-open{
         & .navbar-collapse{
             @include transform-translate-x(0px);
+            display: block;
         }
         & .wrapper{
             left: 0;
@@ -429,6 +430,7 @@
         & .navbar-translate{
             @include transform-translate-x(-230px);
         }
+
     }
     .wrapper .navbar-collapse{
         display: none;
