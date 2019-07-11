@@ -15,6 +15,8 @@ export class ComponentsComponent implements OnInit {
     page = 4;
     page1 = 5;
     focus;
+    focus1;
+    focus2;
     date: {year: number, month: number};
     model: NgbDateStruct;
     constructor( private renderer : Renderer) {}
