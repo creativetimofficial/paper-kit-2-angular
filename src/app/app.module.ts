@@ -21,7 +21,7 @@ import { ExamplesModule } from './examples/examples.module';
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot(),
+    NgbModule,
     FormsModule,
     RouterModule,
     ComponentsModule,
