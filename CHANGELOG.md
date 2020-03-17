@@ -1,3 +1,8 @@
+## [1.3.0] - 2020-03-17
+### Updates
+- update to Angular 9
+- update all dependencies to match Angular 9 version
+
 ## [1.2.0] - 2019-01-09
 ### Updates
 - updated Angular to latest version(Angular 7)

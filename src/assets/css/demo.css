@@ -1,7 +1,7 @@
 /*!
 
  =========================================================
- * Paper Kit 2 Angular - v1.2.0
+ * Paper Kit 2 Angular - v1.3.0
  =========================================================
 
  * Product Page: https://www.creative-tim.com/product/paper-kit-2-angular
