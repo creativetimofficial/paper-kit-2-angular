@@ -16,6 +16,9 @@
     }
     button.close{
         margin-top: -45px;
+        &:focus{
+          outline: none;
+        }
     }
 }
 .modal-content {
@@ -46,7 +49,7 @@
 .modal-footer .left-side, .modal-footer .right-side{
     display: inline-block;
     text-align: center;
-    width: 49%;
+    width: 48%;
 }
 .modal-footer .btn-link{
     padding: 20px;
