@@ -1,0 +1,155 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) {  } */
+
+/* // Small devices (landscape phones, less than 768px) */
+/* @media (max-width: 767.98px) {  } */
+
+/* // Medium devices (tablets, less than 992px) */
+/* @media (max-width: 991.98px) {  } */
+
+/* // Large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) {} */
+
+/* // Extra large devices (large desktops) */
+/* // No media query since the extra-large breakpoint has no upper bound on its width */
+
+
+
+@media (max-width: 991px) {
+    /* .container-fluid {
+        display: none;
+    } */
+
+    .container-fluid {
+
+        /* width: 97.5%; */
+        /*this gives it the precise width to match the Bootstrap defaults*/
+
+        margin-top: 100px;
+        display: flex;
+        flex-flow: column;
+        /* justify-content: start */
+        /* margin: 0px; */
+        /* background-color:black; */
+        /* z-index: 0; */
+        /* display: none; */
+        /* display: block; */
+        /* width: 100vh; */
+        /* margin: 20px auto; */
+    }
+
+    ;
+
+
+
+    .btns {
+        display: flex;
+        align-items: flex-end
+    }
+
+    .mobile {
+        /* order: 1; */
+
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .title,
+    .webauthor {
+        display: none;
+
+        /* font-size:larger; */
+        /* font-weight:bold; */
+    }
+
+    p {
+        font-weight: bold;
+    }
+
+    h6 {
+        font-weight: normal;
+    }
+
+    .details {
+        font-weight: 100;
+        /* margin-right: 20px; */
+    }
+
+    .details h5 {
+        font-size: medium;
+        font-weight: bold
+    }
+
+    img {
+        /* width: 50vh;
+        height: 55vh; */
+        /* margin-left: 20px;
+        margin-right: 20px; */
+        /* order: 2; */
+
+    }
+
+}
+
+;
+
+
+/* this is for everything laptop and above  */
+@media (min-width: 992.98px) {
+
+
+    .container-fluid {
+        width: 80%;
+        margin-top: 100px;
+        color: black;
+        display: flex;
+        justify-content: flex-start
+    }
+
+    .nest {
+        display: flex;
+        justify-content: flex-start
+    }
+
+    .btns {
+        display: flex;
+        align-items: flex-end
+    }
+
+    .title,
+    h3 {
+
+
+        font-family: 'Roboto Slab', serif;
+        /* font-size:larger; */
+        /* font-weight:bold; */
+    }
+
+    p {
+        font-weight: bold;
+    }
+
+    h6 {
+        font-weight: normal;
+    }
+
+    .details {
+        font-weight: 100;
+        margin-right: 20px;
+    }
+
+    .details h5 {
+        font-size: medium;
+        font-weight: bold
+    }
+
+    img {
+        width: 50vh;
+        height: 55vh;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
