@@ -18,20 +18,23 @@
 </div>
 </div> -->
 <!-- Page content -->
-<div class="container mt-8 pb-5" style="margin-top:75px">
+<div class="container mt-8 pb-5" style="margin-top:75px;">
     <!-- Table -->
     <div class="row justify-content-center">
         <div class="col-lg-6 col-md-8">
-            <div class="card  ">
+            <div class="card  " style="background-color:rgb(18, 40, 86)" *ngFor="let item of local">
                 <!-- <div class="card-header bg-transparent pb-5">
                     <div class="text-muted text-center mt-2 mb-4"><small>Sign up with</small></div>
 
+        
                 </div> -->
+
+                <h2 class=" mt-0 mb-3">{{item.title}}:{{item.subtitle}}</h2>
                 <div class="card-body px-lg-5 py-lg-5">
                     <div class="text-center text-muted mb-4">
                         <small>Or sign up with credentials</small>
                     </div>
-                    <form role="form" [formGroup]="user">
+                    <form role="form" [formGroup]="order">
                         <div class="form-group">
                             <div class="input-group input-group-alternative mb-3">
                                 <div class="input-group-prepend">
@@ -45,8 +48,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                                 </div>
-                                <input class="form-control" placeholder="username" type="text"
-                                    formControlName="username">
+                                <input class="form-control" placeholder="city" type="text" formControlName="city">
                             </div>
                         </div>
                         <div class="form-group">
@@ -58,12 +60,19 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <div class="input-group input-group-alternative mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                </div>
+                                <input class="form-control" placeholder="number" type="number" formControlName="number">
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <div class="input-group input-group-alternative">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                                 </div>
-                                <input class="form-control" placeholder="Password" type="password"
-                                    formControlName="password">
+                                <input class="form-control" placeholder="xaafad" type="text" formControlName="xaafad">
                             </div>
                         </div>
                         <div class="text-muted font-italic"><small>password strength: <span
@@ -79,7 +88,7 @@
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="button" class="btn btn-primary mt-4" (click)="newuser(user)">Create
+                            <button type="button" class="btn btn-primary mt-4" (click)='neworder(order)'>Create
                                 account</button>
                         </div>
                     </form>

@@ -36,4 +36,6 @@ export class BookService {
   update(id, data): Observable<any[]> {
     return this.http.put<any[]>(baseUrl + 'books/' + id, data, this.httpHeaders)
   }
+
+  // buy a book 
 }
