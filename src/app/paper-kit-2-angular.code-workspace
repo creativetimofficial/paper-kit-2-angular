@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "paper-kit-2-angular",
+			"path": "..\\.."
+		},
+		{
+			"name": "library_backend",
+			"path": "..\\..\\..\\library_project\\library_backend"
+		}
+	],
+	"settings": {}
+}

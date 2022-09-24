@@ -1,0 +1,62 @@
+<div *ngFor="let item of local" class="container-fluid">
+
+    <!-- <th scope="row">{{item.id}}</th> -->
+    <!-- <img></img> -->
+    <div class="mobile">
+
+        <h2 class=" mt-0 mb-3">{{item.title}}:{{item.subtitle}}</h2>
+        <!-- <h4>{{item.subtitle}}</h4> -->
+        <h6>{{item.author}}(author)</h6>
+    </div>
+    <img class="image img-responsive " src="{{item.image}}" alt="">
+    <div class="firstlook ml-5" style="font-family: 'Roboto Slab', serif;">
+
+        <h2 class="title mt-0 mb-3">{{item.title}}:{{item.subtitle}}</h2>
+        <!-- <h4>{{item.subtitle}}</h4> -->
+        <h6 class="webauthor">{{item.author}}(author)</h6>
+        <div class="formats">
+
+            <button type="button" class="btn  btn-lg my-5  pr-5 d-inline"
+                style="background-color: transparent; color: black; border-color: orange;">
+                <div class="d-block">Hard Cover</div>
+                <div class="m-0 p-0 d-block">$10</div>
+            </button>
+            <button type="button" class="btn  btn-lg my-5  ml-3 pr-5 d-inline"
+                style="background-color: transparent; color: black; border-color: orange;">
+                <div class="d-block">Ebook</div>
+                <div class="m-0 p-0 d-block">$50</div>
+            </button>
+        </div>
+        <div class="btns ">
+            <!-- <button class="btn btn-success" [routerLink]="['/updatecity',item.id]">update</button> -->
+            <!-- <button class="btn btn-danger" (click)="delete(item.id)">delete</button> -->
+            <button type="button" class="btn btn-lg   btn-round mr-3" (click)="delete(item.id)"
+                style="background-color: #de2454; border-color: #de2454;"><i
+                    class="fa fa-shopping-cart fa-lg mr-2"></i>add to
+                cart</button>
+            <button type="button" class="btn btn-lg btn-round"
+                style="background-color: darkblue; border-color: darkblue;"><i class="fa fa-heart mr-2"></i>add to
+                wishlist</button>
+            <!-- <button class="btn btn-success" (click)="delete(item.id)">buy</button> -->
+        </div>
+        <div class="  ">
+            <h3>Description</h3>
+            <h4>{{item.description}}</h4>
+            <h3>Product details</h3>
+            <h5 class="details">page: <h5 class="d-inline">{{item.page}}</h5>
+            </h5>
+            <h5 class="details">category: <h5 class="d-inline">{{item.category}}</h5>
+            </h5>
+            <h5 class="details">tags: <h5 class="d-inline">{{item.tag}}</h5>
+            </h5>
+            <h5 class="details">publish date: <h5 class="d-inline">{{item.published}}</h5>
+            </h5>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!-- <div *ngFor="let item of local" class="container">
+    </div> -->
