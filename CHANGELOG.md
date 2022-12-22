@@ -1,3 +1,9 @@
+## [1.5.0] - 2022-12-22
+### Updates
+- update to Angular 14
+- update all dependencies to match Angular 14 version
+
+
 ## [1.4.0] - 2020-12-14
 ### Updates
 - update to Angular 11
